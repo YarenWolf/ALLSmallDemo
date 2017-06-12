@@ -3,6 +3,7 @@
 //  AllSmallDemo
 #import "ViewController.h"
 #import "ThirdListTableView.h"
+#import <FLAnimatedImage/FLAnimatedImage.h>
 @interface AllSmallCell:UITableViewCell
 @property(nonatomic,strong)UILabel *nameLabel;
 @property(nonatomic,strong)UILabel *detailLabel;
@@ -13,8 +14,8 @@
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if(self){
-        self.nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 10, 100, 20)];
-        self.detailLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 30, 100, 60)];
+        self.nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 10, APPW-20, 20)];
+        self.detailLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 30, APPW-20, 60)];
         self.detailLabel.numberOfLines = 0;
         [self addSubview:self.nameLabel];
         [self addSubview:self.detailLabel];
@@ -35,19 +36,34 @@
     [super viewDidLoad];
     self.title = @"小功能集合";
     self.dataArray = [NSMutableArray arrayWithCapacity:5];
-    NSArray *section1 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture"],@[@"name",@"discription",@"picture"],nil];
-    NSArray *section2 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture"],@[@"name",@"discription",@"picture"],nil];
-    NSArray *section3 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture"],@[@"name",@"discription",@"picture"],nil];
-    NSArray *section4 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture"],@[@"name",@"discription",@"picture"],nil];
-    NSArray *section5 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture"],@[@"name",@"discription",@"picture"],nil];
-    NSArray *section6 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture"],@[@"name",@"discription",@"picture"],nil];
-    NSArray *section7 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture"],@[@"name",@"discription",@"picture"],nil];
-    NSArray *section8 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture"],@[@"name",@"discription",@"picture"],nil];
-    NSArray *section9 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture"],@[@"name",@"discription",@"picture"],nil];
-    NSArray *section10= [NSArray arrayWithObjects:@[@"name",@"discription",@"picture"],@[@"name",@"discription",@"picture"],nil];
+    NSArray *section1 = [NSArray arrayWithObjects:
+  @[@"发短信",@"发短信有两种方法，一个是系统自动发，一个是调出发短信界面。",@"picture",@"SendMessageViewController"],
+  @[@"远程通知",@"获取deviceToken和远程通知写在APPDelegate中的几个方法里。",@"picture",@"RemoteViewController"],
+  @[@"重力效果",@"这是过去的重力效果方法",@"picture",@"GravityViewController"],
+  @[@"重力效果",@"这是现在的重力效果",@"picture",@"CoreMotionViewController"],
+  @[@"距离传感器",@"这是距离传感器，当距离靠近或离开的时候会触发相应方法，屏幕暗下来",@"picture",@"DistanceViewController"],
+  @[@"苹果自带的社会分享",@"这是苹果自带的社会化分享功能，包括微博，facebook等",@"picture",@"AppleSocialViewController"],
+  @[@"本地通知",@"这是本地通知的功能。",@"picture",@"LocalNotificationViewController"],
+  @[@"发邮件",@"这是发送邮件的功能。",@"picture",@"SendEmailViewController"],
+  @[@"打电话",@"这是打电话的功能。",@"picture",@"CallViewController"],
+  @[@"访问通讯录",@"这是访问系统通讯录的功能。",@"picture",@"AddressBookViewController"],
+  @[@"蓝牙4.0",@"这是CoreBlueTooth的蓝牙功能。",@"picture",@"BlueToothViewController"],
+  @[@"APP跳转",@"这是跳转到其他APP并传输相应的参数。",@"picture",@"GoAPPViewController"],
+                         nil];
+    NSArray *section2 = [NSArray arrayWithObjects:@[@"友盟分享",@"discription",@"picture",@"UIViewController"],@[@"MOB短信验证码",@"discription",@"picture",@"UIViewController"],nil];
+    
+    NSArray *section3 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    
+    NSArray *section4 = [NSArray arrayWithObjects:@[@"XML解析",@"这是XML数据格式解析",@"picture",@"XMLParseViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section5 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section6 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section7 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section8 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section9 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section10= [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
     self.dataArray = [NSMutableArray arrayWithObjects:
-  @{@"name":@"aaa",@"array":section1},@{@"name":@"aaa",@"array":section2},
-  @{@"name":@"aaa",@"array":section3},@{@"name":@"aaa",@"array":section4},
+  @{@"name":@"系统功能",@"array":section1},@{@"name":@"第三方服务",@"array":section2},
+  @{@"name":@"数据库处理",@"array":section3},@{@"name":@"数据解析",@"array":section4},
   @{@"name":@"aaa",@"array":section5},@{@"name":@"aaa",@"array":section6},
   @{@"name":@"aaa",@"array":section7},@{@"name":@"aaa",@"array":section8},
   @{@"name":@"aaa",@"array":section9},@{@"name":@"aaa",@"array":section10}, nil];
@@ -70,7 +86,7 @@
     return 100;
 }
 - (CGFloat)mTableView:(ThirdListTableView *)tableView heightForOpenCellAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    return 300;
 }
 - (UIView *)mTableView:(ThirdListTableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView * control = [[UIView alloc] init];
@@ -93,8 +109,15 @@
     return cell;
 }
 - (UIView *)mTableView:(ThirdListTableView *)tableView openCellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 100)];
-    view.backgroundColor = [UIColor redColor];
+    NSData *localData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Untitled" ofType:@"gif"]];
+    FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
+    imageView.animatedImage = [FLAnimatedImage animatedImageWithGIFData:localData];;
+    imageView.frame = CGRectMake(0, 0, 200, 300);
+    [FLAnimatedImage setLogBlock:^(NSString *logString, FLLogLevel logLevel) {
+        NSLog(@"%@", logString);
+    } logLevel:FLLogLevelWarn];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, APPW, 300)];
+    [view addSubview:imageView];
     return view;
 }
 ///FIXME: Table view delegate
@@ -125,5 +148,11 @@
 //celll详情点击
 - (void)mTableView:(ThirdListTableView *)tableView didSelectOpenCellAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"点击了详情的cell：%@",indexPath);
+    NSArray *a = self.dataArray[indexPath.section][@"array"][indexPath.row];
+    NSString *className = a[3];
+    UIViewController *vc = [[NSClassFromString(className) alloc]init];
+    vc.title = a[0];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

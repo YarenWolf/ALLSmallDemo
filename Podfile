@@ -17,4 +17,6 @@ target 'AllSmallDemo' do
     pod 'MJExtension'
     pod 'MJRefresh', '~> 3.1.0'
     pod 'AFNetworking', '~> 3.0'
+    pod 'FLAnimatedImage', '~> 1.0' #    https://github.com/Flipboard/FLAnimatedImage  动态图容器
+    pod 'XJSONKit'
 end

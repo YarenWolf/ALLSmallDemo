@@ -1,0 +1,6 @@
+framework module XJSONKit {
+  umbrella header "XJSONKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

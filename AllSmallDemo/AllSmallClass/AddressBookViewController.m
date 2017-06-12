@@ -9,6 +9,7 @@
 
 #import "AddressBookViewController.h"
 #import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 @implementation AddressBookViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,8 +27,52 @@
     });
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    [self readRecord];
+    ABPeoplePickerNavigationController *vc = [[ABPeoplePickerNavigationController alloc] init];
+    vc.peoplePickerDelegate = self;
+    [self presentViewController:vc animated:YES completion:nil];
 }
+// 在iOS7时 点击cancle按钮时候就会调用
+- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker{
+    NSLog(@"%s", __func__);
+    // 关闭通讯录
+    [peoplePicker dismissViewControllerAnimated:YES completion:nil];
+}
+//  在iOS7时 , 选中某一个联系人就会调用
+// 返回一个BOOL值, 如果返回NO, 代表不会进入下一层(详情), 如果返回YES,代表会进入下一层
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person{
+    NSLog(@"%s", __func__);
+     //取出当前联系人的的电话信息
+     // 获取练习人得姓名
+     CFStringRef lastName = ABRecordCopyValue(person, kABPersonLastNameProperty);
+     CFStringRef firstName = ABRecordCopyValue(person, kABPersonFirstNameProperty);
+     NSLog(@"%@ %@", firstName, lastName);
+     ABMultiValueRef phones =   ABRecordCopyValue(person, kABPersonPhoneProperty);
+     CFIndex phoneCount = ABMultiValueGetCount(phones);
+     for (int i = 0; i < phoneCount; i++) {
+     CFStringRef name = ABMultiValueCopyLabelAtIndex(phones, i);
+     CFStringRef value =  ABMultiValueCopyValueAtIndex(phones, i);
+     NSLog(@"name = %@ value = %@", name, value);
+     }
+    return YES;
+}
+//  在iOS7时 , 选中某一个联系人的某一个属性时就会调用
+// 返回一个BOOL值, 如果返回NO, 代表不会进行下一步操作(打电话, 打开日历....), 如果返回YES,代表会进行下一步操作
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier{
+    NSLog(@"%s", __func__);
+    return YES;
+}
+//  iOS8选中某一个联系人就会调用
+#warning 只要实现了这个方法, 就不会进行下一步操作(进入详情), iOS8的做法是默认返回NO
+- (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker didSelectPerson:(ABRecordRef)person{
+    NSLog(@"%s", __func__);
+}
+// iOS8选中某一个联系人的某一个属性时就会调用
+- (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker didSelectPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier{
+    NSLog(@"%s", __func__);
+}
+
+
+#pragma mark 其他方法
 // 读取练习人信息
 - (void)readRecord{
     if(ABAddressBookGetAuthorizationStatus() != kABAuthorizationStatusAuthorized){

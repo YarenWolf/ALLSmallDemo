@@ -49,6 +49,7 @@
   @[@"访问通讯录",@"这是访问系统通讯录的功能。",@"picture",@"AddressBookViewController"],
   @[@"蓝牙4.0",@"这是CoreBlueTooth的蓝牙功能。",@"picture",@"BlueToothViewController"],
   @[@"APP跳转",@"这是跳转到其他APP并传输相应的参数。",@"picture",@"GoAPPViewController"],
+ @[@"二维码",@"这是二维码功能，包括扫描和生成",@"picture",@"QRCodeViewController"],
                          nil];
     NSArray *section2 = [NSArray arrayWithObjects:@[@"友盟分享",@"discription",@"picture",@"UIViewController"],@[@"MOB短信验证码",@"discription",@"picture",@"UIViewController"],nil];
     
@@ -56,7 +57,7 @@
     
     NSArray *section4 = [NSArray arrayWithObjects:@[@"XML解析",@"这是XML数据格式解析",@"picture",@"XMLParseViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
     NSArray *section5 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
-    NSArray *section6 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section6 = [NSArray arrayWithObjects:@[@"表格编辑模式",@"这是表格的编辑模式包括增删和移动",@"picture",@"EditTableViewController"],@[@"搜索控制器",@"这是搜索代理控制器，可以处理搜索结果",@"picture",@"SearchResaltViewController"],nil];
     NSArray *section7 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
     NSArray *section8 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
     NSArray *section9 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
@@ -64,8 +65,8 @@
     self.dataArray = [NSMutableArray arrayWithObjects:
   @{@"name":@"系统功能",@"array":section1},@{@"name":@"第三方服务",@"array":section2},
   @{@"name":@"数据库处理",@"array":section3},@{@"name":@"数据解析",@"array":section4},
-  @{@"name":@"aaa",@"array":section5},@{@"name":@"aaa",@"array":section6},
-  @{@"name":@"aaa",@"array":section7},@{@"name":@"aaa",@"array":section8},
+  @{@"name":@"网络传输",@"array":section5},@{@"name":@"UI界面设计",@"array":section6},
+  @{@"name":@"特效动画",@"array":section7},@{@"name":@"aaa",@"array":section8},
   @{@"name":@"aaa",@"array":section9},@{@"name":@"aaa",@"array":section10}, nil];
     self.mTableView = [[ThirdListTableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width,self.view.frame.size.height)];
     self.mTableView.delegate = self;

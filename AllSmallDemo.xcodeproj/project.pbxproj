@@ -98,6 +98,9 @@
 		BFF0BE7A1EEE84790033159D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF0BE791EEE84790033159D /* libxml2.tbd */; };
 		BFF0BE7D1EEE8CC60033159D /* BlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF0BE7C1EEE8CC60033159D /* BlueToothViewController.m */; };
 		BFF0BE801EEE90060033159D /* GoAPPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF0BE7F1EEE90060033159D /* GoAPPViewController.m */; };
+		BFF0BE841EEE9BAA0033159D /* EditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF0BE831EEE9BAA0033159D /* EditTableViewController.m */; };
+		BFF0BE871EEEA2230033159D /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF0BE861EEEA2230033159D /* QRCodeViewController.m */; };
+		BFF0BE8A1EEEA7600033159D /* SearchResaltViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF0BE891EEEA7600033159D /* SearchResaltViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -277,6 +280,12 @@
 		BFF0BE7C1EEE8CC60033159D /* BlueToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueToothViewController.m; sourceTree = "<group>"; };
 		BFF0BE7E1EEE90060033159D /* GoAPPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoAPPViewController.h; sourceTree = "<group>"; };
 		BFF0BE7F1EEE90060033159D /* GoAPPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoAPPViewController.m; sourceTree = "<group>"; };
+		BFF0BE821EEE9BAA0033159D /* EditTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTableViewController.h; sourceTree = "<group>"; };
+		BFF0BE831EEE9BAA0033159D /* EditTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTableViewController.m; sourceTree = "<group>"; };
+		BFF0BE851EEEA2230033159D /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		BFF0BE861EEEA2230033159D /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		BFF0BE881EEEA7600033159D /* SearchResaltViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResaltViewController.h; sourceTree = "<group>"; };
+		BFF0BE891EEEA7600033159D /* SearchResaltViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResaltViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +388,7 @@
 		BF8E21E11EEE4072006B2C0A /* AllSmallClass */ = {
 			isa = PBXGroup;
 			children = (
+				BFF0BE811EEE9B900033159D /* UIClass */,
 				BF8E21E21EEE4083006B2C0A /* SendMessageViewController.h */,
 				BF8E21E31EEE4083006B2C0A /* SendMessageViewController.m */,
 				BF8E21E71EEE47E0006B2C0A /* RemoteViewController.h */,
@@ -405,6 +415,8 @@
 				BFF0BE771EEE832F0033159D /* XMLParseViewController.m */,
 				BFF0BE7E1EEE90060033159D /* GoAPPViewController.h */,
 				BFF0BE7F1EEE90060033159D /* GoAPPViewController.m */,
+				BFF0BE851EEEA2230033159D /* QRCodeViewController.h */,
+				BFF0BE861EEEA2230033159D /* QRCodeViewController.m */,
 			);
 			path = AllSmallClass;
 			sourceTree = "<group>";
@@ -594,6 +606,17 @@
 			path = GDataXML;
 			sourceTree = "<group>";
 		};
+		BFF0BE811EEE9B900033159D /* UIClass */ = {
+			isa = PBXGroup;
+			children = (
+				BFF0BE821EEE9BAA0033159D /* EditTableViewController.h */,
+				BFF0BE831EEE9BAA0033159D /* EditTableViewController.m */,
+				BFF0BE881EEEA7600033159D /* SearchResaltViewController.h */,
+				BFF0BE891EEEA7600033159D /* SearchResaltViewController.m */,
+			);
+			path = UIClass;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -725,6 +748,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF0BE271EEE62240033159D /* BaseViewController.m in Sources */,
+				BFF0BE841EEE9BAA0033159D /* EditTableViewController.m in Sources */,
 				BFF0BE481EEE62240033159D /* WDArgument.m in Sources */,
 				BFF0BE261EEE62240033159D /* BaseTableViewCell.m in Sources */,
 				BFF0BE191EEE62240033159D /* FogetKeyViewController.m in Sources */,
@@ -760,6 +784,7 @@
 				BFF0BE5D1EEE656C0033159D /* CoreMotionViewController.m in Sources */,
 				BFF0BE441EEE62240033159D /* NSObject+WDCoding.m in Sources */,
 				BF6A07601ED826EF00AD1E1F /* ViewController.m in Sources */,
+				BFF0BE8A1EEEA7600033159D /* SearchResaltViewController.m in Sources */,
 				BF6A07781ED833ED00AD1E1F /* ThirdListTableView.m in Sources */,
 				BFF0BE241EEE62240033159D /* BaseStaticTableView.m in Sources */,
 				BFF0BE321EEE62240033159D /* NSMutableArray+expanded.m in Sources */,
@@ -782,6 +807,7 @@
 				BFF0BE3F1EEE62240033159D /* UIView+expanded.m in Sources */,
 				BFF0BE381EEE62240033159D /* UIControl+expanded.m in Sources */,
 				BFF0BE1D1EEE62240033159D /* RegisterViewController.m in Sources */,
+				BFF0BE871EEEA2230033159D /* QRCodeViewController.m in Sources */,
 				BFF0BE2B1EEE62240033159D /* HomeTabBar.m in Sources */,
 				BFF0BE1B1EEE62240033159D /* LoginViewController.m in Sources */,
 				BFF0BE2C1EEE62240033159D /* HomeTabBarController.m in Sources */,

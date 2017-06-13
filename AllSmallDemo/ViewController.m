@@ -39,8 +39,9 @@
     NSArray *section1 = [NSArray arrayWithObjects:
   @[@"发短信",@"发短信有两种方法，一个是系统自动发，一个是调出发短信界面。",@"picture",@"SendMessageViewController"],
   @[@"远程通知",@"获取deviceToken和远程通知写在APPDelegate中的几个方法里。",@"picture",@"RemoteViewController"],
-  @[@"重力效果",@"这是过去的重力效果方法",@"picture",@"GravityViewController"],
-  @[@"重力效果",@"这是现在的重力效果",@"picture",@"CoreMotionViewController"],
+  @[@"重力效果",@"这是重力和碰撞效果方法",@"picture",@"GravityViewController"],
+  @[@"旧加速计",@"这是过去的重力加速计效果Accelerometer方法",@"picture",@"AccelerometerViewController"],
+  @[@"新加速计",@"这是现在的重力加速计效果CoreMotion",@"picture",@"CoreMotionViewController"],
   @[@"距离传感器",@"这是距离传感器，当距离靠近或离开的时候会触发相应方法，屏幕暗下来",@"picture",@"DistanceViewController"],
   @[@"苹果自带的社会分享",@"这是苹果自带的社会化分享功能，包括微博，facebook等",@"picture",@"AppleSocialViewController"],
   @[@"本地通知",@"这是本地通知的功能。",@"picture",@"LocalNotificationViewController"],
@@ -51,17 +52,48 @@
   @[@"APP跳转",@"这是跳转到其他APP并传输相应的参数。",@"picture",@"GoAPPViewController"],
  @[@"二维码",@"这是二维码功能，包括扫描和生成",@"picture",@"QRCodeViewController"],
                          nil];
-    NSArray *section2 = [NSArray arrayWithObjects:@[@"友盟分享",@"discription",@"picture",@"UIViewController"],@[@"MOB短信验证码",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section2 = [NSArray arrayWithObjects:
+  @[@"友盟分享",@"discription",@"picture",@"UIViewController"],
+  @[@"MOB短信验证码",@"discription",@"picture",@"UIViewController"],
+  @[@"百度地图",@"discription",@"picture",@"UIViewController"],nil];
     
-    NSArray *section3 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section3 = [NSArray arrayWithObjects:
+  @[@"name",@"discription",@"picture",@"UIViewController"],
+  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
     
-    NSArray *section4 = [NSArray arrayWithObjects:@[@"XML解析",@"这是XML数据格式解析",@"picture",@"XMLParseViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
-    NSArray *section5 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
-    NSArray *section6 = [NSArray arrayWithObjects:@[@"表格编辑模式",@"这是表格的编辑模式包括增删和移动",@"picture",@"EditTableViewController"],@[@"搜索控制器",@"这是搜索代理控制器，可以处理搜索结果",@"picture",@"SearchResaltViewController"],nil];
-    NSArray *section7 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
-    NSArray *section8 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
-    NSArray *section9 = [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
-    NSArray *section10= [NSArray arrayWithObjects:@[@"name",@"discription",@"picture",@"UIViewController"],@[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section4 = [NSArray arrayWithObjects:
+  @[@"XML解析",@"这是XML数据格式解析",@"picture",@"XMLParseViewController"],
+  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section5 = [NSArray arrayWithObjects:
+  @[@"name",@"discription",@"picture",@"UIViewController"],
+  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section6 = [NSArray arrayWithObjects:
+  @[@"表格编辑模式",@"这是表格的编辑模式包括增删和移动",@"picture",@"EditTableViewController"],
+  @[@"搜索控制器",@"这是搜索代理控制器，可以处理搜索结果",@"picture",@"SearchResaltViewController"],
+  @[@"圆形集合视图",@"这是圆形的collectionView",@"picture",@"CircleCollectionViewController"],
+  @[@"表情链接样式字符串",@"这是一个lable上面可容纳带有表情、链接、人员名字、跳转、拷贝等功能的字符串。",@"picture",@"EmojiViewController"],
+  @[@"表格渐变出现单元格",@"向上滑动的时候单元格是渐变出现的。",@"picture",@"SlideTableViewController"],
+  @[@"cell缩放的集合视图",@"集合视图的cell可以缩放",@"picture",@"ScaleCollectionViewController"],
+  @[@"经典引导界面",@"这是比较经典的引导界面",@"picture",@"GuideViewController"],
+nil];
+    NSArray *section7 = [NSArray arrayWithObjects:
+  @[@"圆形出来菜单",@"这是很好用的圆形出来的按钮，可以控制间距、大小等。",@"picture",@"RadialMenuViewController"],
+  @[@"导航栏下拉菜单",@"从导航栏上面往下出现的菜单按钮",@"picture",@"NaviMenuViewController"],
+  @[@"经典弹框",@"经典的自定义弹出窗口 ",@"picture",@"AlertViewController"],
+  @[@"圆形出来菜单",@"圆形出来的菜单按钮，碰到边缘可自动调整布局。",@"picture",@"RadiaMenuViewController"],
+  @[@"页面转场动画",@"界面布局样式修改后切换到新的界面的动画，是个枚举类型",@"picture",@"TransitionViewController"],
+  @[@"动画组",@"这是几个动画效果结合在一起形成的动画",@"picture",@"AnimationsViewController"],
+  @[@"有趣的欢迎界面",@"这是非常有趣的欢迎界面",@"picture",@"WelcomeViewController"],
+                         nil];
+    NSArray *section8 = [NSArray arrayWithObjects:
+  @[@"页面转场动画",@"界面布局样式修改后切换到新的界面的动画，是个枚举类型",@"picture",@"GuideViewController"],
+  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section9 = [NSArray arrayWithObjects:
+  @[@"name",@"discription",@"picture",@"UIViewController"],
+  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
+    NSArray *section10= [NSArray arrayWithObjects:
+  @[@"name",@"discription",@"picture",@"UIViewController"],
+  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
     self.dataArray = [NSMutableArray arrayWithObjects:
   @{@"name":@"系统功能",@"array":section1},@{@"name":@"第三方服务",@"array":section2},
   @{@"name":@"数据库处理",@"array":section3},@{@"name":@"数据解析",@"array":section4},

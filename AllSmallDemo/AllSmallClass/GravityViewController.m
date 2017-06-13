@@ -7,58 +7,66 @@
 //
 
 #import "GravityViewController.h"
-
-@interface GravityViewController () <UIAccelerometerDelegate>
-@property (strong, nonatomic) UIImageView *ball;
-@property (nonatomic, assign) CGPoint velocity;
+//5种: 碰撞.重力.推力.吸附.捕捉
+@interface GravityViewController ()<UICollisionBehaviorDelegate>
+@property (nonatomic) UIDynamicAnimator *animator;//动力世界,对于autolayout兼容不是很好, 我们用frame
+@property (nonatomic) UIGravityBehavior *gravityBehavior;//重力行为
+@property (nonatomic) UICollisionBehavior *collisionBehavior;//碰撞行为
 @end
 @implementation GravityViewController
-- (void)viewDidLoad{
-    [super viewDidLoad];
-    self.ball = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 80, 80)];
-    self.ball.image = [UIImage imageNamed:@"ball"];
-    [self.view addSubview:self.ball];
-    // 1.获得单例对象（过期：不再更新，并不一定代表不能用）
-    UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
-    // 2.设置代理
-    accelerometer.delegate = self;
-    // 3.设置采样间隔（每隔多少秒采样一次数据）
-    accelerometer.updateInterval = 1 / 30.0;
+#pragma mark - UICollisionBehavior Delegate
+- (void)collisionBehavior:(UICollisionBehavior*)behavior beganContactForItem:(id <UIDynamicItem>)item withBoundaryIdentifier:(nullable id <NSCopying>)identifier atPoint:(CGPoint)p{
+    UIImageView *iv = (UIImageView *)item;
+    [UIView animateWithDuration:2 animations:^{
+        iv.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        [iv removeFromSuperview];
+        [self.gravityBehavior removeItem:iv];
+        [self.collisionBehavior removeItem:iv];
+    }];
 }
-#pragma mark - UIAccelerometerDelegate
-/**
- *  当采样到加速计数据时，就会调用一次（调用频率一般比较高）
- */
-- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration{
-    // 1.累加速度
-    // v = a * t = a1 + a2 + a3 + ...... + at
-    _velocity.x += acceleration.x;
-    _velocity.y -= acceleration.y;
-    // 2.累加位移
-    // s = v * t = v1 + v2 + v3 + ...... + vt
-    self.ball.frameX += _velocity.x;
-    self.ball.frameY += _velocity.y;
-    // 3.边界判断
-    if (self.ball.frameX <= 0) { // x超出屏幕左边
-        self.ball.frameX = 0;
-        // 速度取反，削弱速度
-        _velocity.x *= -0.5;
-    }
-    if (CGRectGetMaxX(self.ball.frame) >= self.view.frameWidth) { // x超出屏幕右边
-         self.ball.frameX = self.view.frameWidth - self.ball.frameWidth;
-        // 速度取反，削弱速度
-        _velocity.x *= -0.5;
-    }
-    if (self.ball.frameY <= 0) { // y超出屏幕上边
-        self.ball.frameY = 0;
-        // 速度取反，削弱速度
-        _velocity.y *= -0.5;
-    }
-    if (CGRectGetMaxY(self.ball.frame) >= self.view.frameHeight) { // y超出屏幕下边
-        self.ball.frameY = self.view.frameHeight - self.ball.frameHeight;
-        // 速度取反，削弱速度
-        _velocity.y *= -0.5;
-    }
+
+#pragma mark - 方法 Methods
+- (void)createKupao:sender{
+    CGFloat width = 60;
+    CGFloat x = arc4random()% (long)(self.view.frame.size.width - width);
+    CGRect frame = CGRectMake(x, width, width, width);
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:frame];
+    [self.view addSubview:imageView];
+    imageView.image = [UIImage animatedImageNamed:@"loading_" duration:.4];
+    //把小人添加到重力行为中,让他具有重力效果
+    [self.gravityBehavior addItem:imageView];
+    //小人添加到碰撞行为中
+    [self.collisionBehavior addItem:imageView];
+}
+#pragma mark - 生命周期 Life Circle
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    _animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    [self.animator addBehavior:self.gravityBehavior];
+    [self.animator addBehavior:self.collisionBehavior];
+    //每隔一秒钟生成一个小人
+    [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(createKupao:) userInfo:nil repeats:YES];
+}
+- (UIGravityBehavior *)gravityBehavior {
+    if(_gravityBehavior == nil) {
+        _gravityBehavior = [[UIGravityBehavior alloc] init];
+        //_gravityBehavior.magnitude = 0.8; //重力大小
+        //_gravityBehavior.angle = M_PI_2;//重力方向
+        //通过矢量来设置重力的大小和方向
+        _gravityBehavior.gravityDirection = CGVectorMake(0, 1);
+    }return _gravityBehavior;
+}
+- (UICollisionBehavior *)collisionBehavior {
+    if(_collisionBehavior == nil) {
+        _collisionBehavior = [[UICollisionBehavior alloc] init];
+        //把当前动力世界的边缘变为可碰撞
+        _collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
+        //通过协议,可以监听碰撞行为的发生
+        _collisionBehavior.collisionDelegate = self;
+    }return _collisionBehavior;
 }
 
 @end
+
+

@@ -17,12 +17,15 @@ PODS:
   - FLAnimatedImage (1.0.12)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
+  - MLEmojiLabel (1.0.2):
+    - TTTAttributedLabel (~> 1.13.4)
   - Reachability (3.1.1)
   - RESideMenu (4.0.7)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - SVProgressHUD (0.9)
+  - TTTAttributedLabel (1.13.4)
   - XJSONKit (0.0.3)
 
 DEPENDENCIES:
@@ -30,6 +33,7 @@ DEPENDENCIES:
   - FLAnimatedImage (~> 1.0)
   - MJExtension
   - MJRefresh (~> 3.1.0)
+  - MLEmojiLabel
   - Reachability (= 3.1.1)
   - RESideMenu (~> 4.0.7)
   - SDWebImage
@@ -41,12 +45,14 @@ SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MLEmojiLabel: 36d73c19f9975cbf9def24e5bc135263b0337fd8
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: 7038ae9d6a0bd2c87560d2699eba642eef82d41e
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   XJSONKit: 8a04df8b0642b23b1352f80e35a9e197c7135b78
 
-PODFILE CHECKSUM: cc229d6ba7f5e094c7d1221741520d8c78ecfc85
+PODFILE CHECKSUM: 8c9041919cd1222d61668946e7c3035585d2436f
 
 COCOAPODS: 1.2.1

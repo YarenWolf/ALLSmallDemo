@@ -82,6 +82,32 @@
     NSString *city = self.allCitys[sourceIndexPath.row];
     [self.allCitys removeObjectAtIndex:sourceIndexPath.row];
     [self.allCitys insertObject:city atIndex:destinationIndexPath.row];
+    
+//    [tableView moveRowAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
+}
+#pragma mark 在滑动手势删除某一行的时候，显示出更多的按钮
+- (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+    // 1 添加一个删除按钮
+    UITableViewRowAction *deleteRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        NSLog(@"点击了删除");
+        // 1.1 更新数据
+        [self.allCitys removeObjectAtIndex:indexPath.row];
+        // 1.2 更新UI
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }];
+    // 2 删除一个置顶按钮
+    UITableViewRowAction *topRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"置顶" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        [self.allCitys exchangeObjectAtIndex:indexPath.row withObjectAtIndex:0];
+        NSIndexPath *firstIndexPath = [NSIndexPath indexPathForRow:0 inSection:indexPath.section];
+        [tableView moveRowAtIndexPath:indexPath toIndexPath:firstIndexPath];
+    }];
+    topRowAction.backgroundColor = [UIColor blueColor];
+    UITableViewRowAction *moreRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"更多" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        NSLog(@"点击了更多按钮");
+        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationMiddle];
+    }];
+    moreRowAction.backgroundEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    return @[deleteRowAction, topRowAction, moreRowAction];
 }
 
 @end

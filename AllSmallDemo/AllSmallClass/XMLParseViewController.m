@@ -8,6 +8,7 @@
 
 #import "XMLParseViewController.h"
 #import "GDataXMLNode.h"
+#import "TBXML.h"
 @interface MyVideo : NSObject
 @property (nonatomic, copy) NSString *image;
 @property (nonatomic, copy) NSString *name;
@@ -21,6 +22,11 @@
 @implementation XMLParseViewController
 - (void)viewDidLoad{
     [super viewDidLoad];
+    [self parseXML2];
+}
+
+#pragma mark 第一种xml解析方法
+-(void)parseXML1{
     NSData *xmlData = nil;
     GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:xmlData options:0 error:nil];
     GDataXMLElement *root = doc.rootElement;
@@ -35,7 +41,33 @@
         [self.videos addObject:video];
     }
 }
-#pragma mark 第二种xml解析方法，系统自带的
+
+#pragma mark 第二种xml解析方法
+-(void)parseXML2{
+    NSMutableArray *menus = [NSMutableArray array];
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"menus" ofType:@"xml"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    TBXML *tbxml = [[TBXML alloc]initWithXMLData:data error:nil];
+    //得到根元素
+    TBXMLElement *rootEle = tbxml.rootXMLElement;
+    TBXMLElement *resultEle = [TBXML childElementNamed:@"result" parentElement:rootEle];
+    TBXMLElement *dataEle = [TBXML childElementNamed:@"data" parentElement:resultEle];
+    TBXMLElement *itemEle = [TBXML childElementNamed:@"item" parentElement:dataEle];
+    while (itemEle) {
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        TBXMLElement *titleEle = [TBXML childElementNamed:@"title" parentElement:itemEle];
+        TBXMLElement *idEle = [TBXML childElementNamed:@"id" parentElement:itemEle];
+        TBXMLElement *introEle = [TBXML childElementNamed:@"imtro" parentElement:itemEle];
+        [dict setValue:[TBXML textForElement:titleEle] forKey:@"name"];
+        [dict setValue:[TBXML textForElement:idEle] forKey:@"menuID"];
+        [dict setValue:[TBXML textForElement:introEle] forKey:@"description"];
+        [menus addObject:dict];
+        DLog(@"%@\n%@",dict[@"name"],dict[@"description"]);
+        itemEle = [TBXML nextSiblingNamed:@"item" searchFromElement:itemEle];
+    }
+    DLog(@"%@",menus);
+}
+#pragma mark 第三种xml解析方法，系统自带的
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     // 解析XML数据
     NSData *xmlData = nil;

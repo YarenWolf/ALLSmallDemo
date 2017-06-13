@@ -23,6 +23,13 @@
 		BF6A07651ED826EF00AD1E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6A07641ED826EF00AD1E1F /* Assets.xcassets */; };
 		BF6A07681ED826EF00AD1E1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6A07661ED826EF00AD1E1F /* LaunchScreen.storyboard */; };
 		BF6A07781ED833ED00AD1E1F /* ThirdListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6A07771ED833ED00AD1E1F /* ThirdListTableView.m */; };
+		BF6CB92D1EEFF64F007C7188 /* AppleGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CB92C1EEFF64F007C7188 /* AppleGuideViewController.m */; };
+		BF6CB9311EF011AA007C7188 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CB9301EF011AA007C7188 /* IGLDropDownMenu.m */; };
+		BF6CB9341EF01303007C7188 /* MenusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CB9331EF01303007C7188 /* MenusViewController.m */; };
+		BF6CB9371EF017D5007C7188 /* RecordAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CB9361EF017D5007C7188 /* RecordAudioViewController.m */; };
+		BF6CB93A1EF01D13007C7188 /* DownTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CB9391EF01D13007C7188 /* DownTableViewController.m */; };
+		BF6CB93D1EF0219B007C7188 /* ScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CB93C1EF0219B007C7188 /* ScreenshotViewController.m */; };
+		BF6CB9401EF023AD007C7188 /* GuidanceRegionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CB93F1EF023AD007C7188 /* GuidanceRegionViewController.m */; };
 		BF8E21E41EEE4083006B2C0A /* SendMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E21E31EEE4083006B2C0A /* SendMessageViewController.m */; };
 		BF8E21E91EEE47E0006B2C0A /* RemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E21E81EEE47E0006B2C0A /* RemoteViewController.m */; };
 		BF8E21EC1EEE5C4A006B2C0A /* Untitled.gif in Resources */ = {isa = PBXBuildFile; fileRef = BF8E21EB1EEE5C4A006B2C0A /* Untitled.gif */; };
@@ -74,6 +81,17 @@
 		BF946CD11EEFDF8C001E8AEF /* EMHintsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946CCD1EEFDF8C001E8AEF /* EMHintsView.m */; };
 		BF946CD21EEFDF8C001E8AEF /* XSportLight.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946CCF1EEFDF8C001E8AEF /* XSportLight.m */; };
 		BF946CD51EEFDFC3001E8AEF /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946CD41EEFDFC3001E8AEF /* GuideViewController.m */; };
+		BF946CDD1EEFE777001E8AEF /* app_item_add.png in Resources */ = {isa = PBXBuildFile; fileRef = BF946CD71EEFE777001E8AEF /* app_item_add.png */; };
+		BF946CDE1EEFE777001E8AEF /* app_item_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BF946CD81EEFE777001E8AEF /* app_item_bg.png */; };
+		BF946CDF1EEFE777001E8AEF /* app_item_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = BF946CD91EEFE777001E8AEF /* app_item_plus.png */; };
+		BF946CE01EEFE777001E8AEF /* app_item_pressed_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BF946CDA1EEFE777001E8AEF /* app_item_pressed_bg.png */; };
+		BF946CE11EEFE777001E8AEF /* CustomGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946CDC1EEFE777001E8AEF /* CustomGrid.m */; };
+		BF946CE41EEFE811001E8AEF /* MoveItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946CE31EEFE811001E8AEF /* MoveItemViewController.m */; };
+		BF946CE71EEFED65001E8AEF /* GameKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946CE61EEFED65001E8AEF /* GameKitViewController.m */; };
+		BF946CE91EEFEF01001E8AEF /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF946CE81EEFEF01001E8AEF /* GameKit.framework */; };
+		BF946CEB1EEFEF57001E8AEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF946CEA1EEFEF57001E8AEF /* CoreGraphics.framework */; };
+		BF946CED1EEFF212001E8AEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF946CEC1EEFF212001E8AEF /* UIKit.framework */; };
+		BF946CEF1EEFF218001E8AEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF946CEE1EEFF218001E8AEF /* Foundation.framework */; };
 		BFF0BD8F1EEE61850033159D /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF0BD8E1EEE61850033159D /* GravityViewController.m */; };
 		BFF0BE191EEE62240033159D /* FogetKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF0BD931EEE62240033159D /* FogetKeyViewController.m */; };
 		BFF0BE1A1EEE62240033159D /* FogetKeyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF0BD941EEE62240033159D /* FogetKeyViewController.xib */; };
@@ -190,6 +208,20 @@
 		BF6A07691ED826EF00AD1E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6A07761ED833ED00AD1E1F /* ThirdListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdListTableView.h; sourceTree = "<group>"; };
 		BF6A07771ED833ED00AD1E1F /* ThirdListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdListTableView.m; sourceTree = "<group>"; };
+		BF6CB92B1EEFF64F007C7188 /* AppleGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleGuideViewController.h; sourceTree = "<group>"; };
+		BF6CB92C1EEFF64F007C7188 /* AppleGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleGuideViewController.m; sourceTree = "<group>"; };
+		BF6CB92F1EF011AA007C7188 /* IGLDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownMenu.h; sourceTree = "<group>"; };
+		BF6CB9301EF011AA007C7188 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownMenu.m; sourceTree = "<group>"; };
+		BF6CB9321EF01303007C7188 /* MenusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenusViewController.h; sourceTree = "<group>"; };
+		BF6CB9331EF01303007C7188 /* MenusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenusViewController.m; sourceTree = "<group>"; };
+		BF6CB9351EF017D5007C7188 /* RecordAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordAudioViewController.h; sourceTree = "<group>"; };
+		BF6CB9361EF017D5007C7188 /* RecordAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordAudioViewController.m; sourceTree = "<group>"; };
+		BF6CB9381EF01D13007C7188 /* DownTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownTableViewController.h; sourceTree = "<group>"; };
+		BF6CB9391EF01D13007C7188 /* DownTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownTableViewController.m; sourceTree = "<group>"; };
+		BF6CB93B1EF0219B007C7188 /* ScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenshotViewController.h; sourceTree = "<group>"; };
+		BF6CB93C1EF0219B007C7188 /* ScreenshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenshotViewController.m; sourceTree = "<group>"; };
+		BF6CB93E1EF023AD007C7188 /* GuidanceRegionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidanceRegionViewController.h; sourceTree = "<group>"; };
+		BF6CB93F1EF023AD007C7188 /* GuidanceRegionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidanceRegionViewController.m; sourceTree = "<group>"; };
 		BF8E21E21EEE4083006B2C0A /* SendMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessageViewController.h; sourceTree = "<group>"; };
 		BF8E21E31EEE4083006B2C0A /* SendMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessageViewController.m; sourceTree = "<group>"; };
 		BF8E21E51EEE4160006B2C0A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -266,6 +298,20 @@
 		BF946CCF1EEFDF8C001E8AEF /* XSportLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSportLight.m; sourceTree = "<group>"; };
 		BF946CD31EEFDFC3001E8AEF /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		BF946CD41EEFDFC3001E8AEF /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		BF946CD71EEFE777001E8AEF /* app_item_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_item_add.png; sourceTree = "<group>"; };
+		BF946CD81EEFE777001E8AEF /* app_item_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_item_bg.png; sourceTree = "<group>"; };
+		BF946CD91EEFE777001E8AEF /* app_item_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_item_plus.png; sourceTree = "<group>"; };
+		BF946CDA1EEFE777001E8AEF /* app_item_pressed_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_item_pressed_bg.png; sourceTree = "<group>"; };
+		BF946CDB1EEFE777001E8AEF /* CustomGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGrid.h; sourceTree = "<group>"; };
+		BF946CDC1EEFE777001E8AEF /* CustomGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGrid.m; sourceTree = "<group>"; };
+		BF946CE21EEFE811001E8AEF /* MoveItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveItemViewController.h; sourceTree = "<group>"; };
+		BF946CE31EEFE811001E8AEF /* MoveItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveItemViewController.m; sourceTree = "<group>"; };
+		BF946CE51EEFED65001E8AEF /* GameKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitViewController.h; sourceTree = "<group>"; };
+		BF946CE61EEFED65001E8AEF /* GameKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitViewController.m; sourceTree = "<group>"; };
+		BF946CE81EEFEF01001E8AEF /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		BF946CEA1EEFEF57001E8AEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BF946CEC1EEFF212001E8AEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF946CEE1EEFF218001E8AEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFF0BD8D1EEE61850033159D /* GravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityViewController.h; sourceTree = "<group>"; };
 		BFF0BD8E1EEE61850033159D /* GravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityViewController.m; sourceTree = "<group>"; };
 		BFF0BD921EEE62240033159D /* FogetKeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FogetKeyViewController.h; sourceTree = "<group>"; };
@@ -434,6 +480,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF946CEF1EEFF218001E8AEF /* Foundation.framework in Frameworks */,
+				BF946CED1EEFF212001E8AEF /* UIKit.framework in Frameworks */,
+				BF946CEB1EEFEF57001E8AEF /* CoreGraphics.framework in Frameworks */,
+				BF946CE91EEFEF01001E8AEF /* GameKit.framework in Frameworks */,
 				BFF0BE7A1EEE84790033159D /* libxml2.tbd in Frameworks */,
 				6BF4F545C8C01116B60FD2D7 /* Pods_AllSmallDemo.framework in Frameworks */,
 			);
@@ -445,6 +495,10 @@
 		82BC51984B79138FABD24A61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF946CEE1EEFF218001E8AEF /* Foundation.framework */,
+				BF946CEC1EEFF212001E8AEF /* UIKit.framework */,
+				BF946CEA1EEFEF57001E8AEF /* CoreGraphics.framework */,
+				BF946CE81EEFEF01001E8AEF /* GameKit.framework */,
 				BFF0BE791EEE84790033159D /* libxml2.tbd */,
 				467FBB8CEB9C9F4A04B994ED /* Pods_AllSmallDemo.framework */,
 			);
@@ -533,6 +587,8 @@
 		BF6A07701ED8276E00AD1E1F /* ThirdFramework */ = {
 			isa = PBXGroup;
 			children = (
+				BF6CB92E1EF011AA007C7188 /* IGLDropDownMenu */,
+				BF946CD61EEFE777001E8AEF /* MoveButton */,
 				BF946CC91EEFDF8C001E8AEF /* SpotLight */,
 				BF946C861EEFD217001E8AEF /* HMNavigationController.h */,
 				BF946C871EEFD217001E8AEF /* HMNavigationController.m */,
@@ -559,9 +615,28 @@
 			path = "三级列表";
 			sourceTree = "<group>";
 		};
+		BF6CB92A1EEFF63E007C7188 /* 第三方 */ = {
+			isa = PBXGroup;
+			children = (
+				BF6CB92B1EEFF64F007C7188 /* AppleGuideViewController.h */,
+				BF6CB92C1EEFF64F007C7188 /* AppleGuideViewController.m */,
+			);
+			path = "第三方";
+			sourceTree = "<group>";
+		};
+		BF6CB92E1EF011AA007C7188 /* IGLDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BF6CB92F1EF011AA007C7188 /* IGLDropDownMenu.h */,
+				BF6CB9301EF011AA007C7188 /* IGLDropDownMenu.m */,
+			);
+			path = IGLDropDownMenu;
+			sourceTree = "<group>";
+		};
 		BF8E21E11EEE4072006B2C0A /* AllSmallClass */ = {
 			isa = PBXGroup;
 			children = (
+				BF6CB92A1EEFF63E007C7188 /* 第三方 */,
 				BF683D1D1EEF7F0800F4F72F /* 特效动画 */,
 				BFF0BE811EEE9B900033159D /* UIClass */,
 				BF8E21E21EEE4083006B2C0A /* SendMessageViewController.h */,
@@ -586,6 +661,8 @@
 				BFF0BE6D1EEE7B030033159D /* CallViewController.m */,
 				BFF0BE6F1EEE7F0D0033159D /* AddressBookViewController.h */,
 				BFF0BE701EEE7F0D0033159D /* AddressBookViewController.m */,
+				BF946CE51EEFED65001E8AEF /* GameKitViewController.h */,
+				BF946CE61EEFED65001E8AEF /* GameKitViewController.m */,
 				BFF0BE7B1EEE8CC60033159D /* BlueToothViewController.h */,
 				BFF0BE7C1EEE8CC60033159D /* BlueToothViewController.m */,
 				BF683D271EEF8DB100F4F72F /* menus.xml */,
@@ -595,6 +672,10 @@
 				BFF0BE7F1EEE90060033159D /* GoAPPViewController.m */,
 				BFF0BE851EEEA2230033159D /* QRCodeViewController.h */,
 				BFF0BE861EEEA2230033159D /* QRCodeViewController.m */,
+				BF6CB9351EF017D5007C7188 /* RecordAudioViewController.h */,
+				BF6CB9361EF017D5007C7188 /* RecordAudioViewController.m */,
+				BF6CB9381EF01D13007C7188 /* DownTableViewController.h */,
+				BF6CB9391EF01D13007C7188 /* DownTableViewController.m */,
 			);
 			path = AllSmallClass;
 			sourceTree = "<group>";
@@ -681,6 +762,19 @@
 				BF946CCF1EEFDF8C001E8AEF /* XSportLight.m */,
 			);
 			path = SpotLight;
+			sourceTree = "<group>";
+		};
+		BF946CD61EEFE777001E8AEF /* MoveButton */ = {
+			isa = PBXGroup;
+			children = (
+				BF946CD71EEFE777001E8AEF /* app_item_add.png */,
+				BF946CD81EEFE777001E8AEF /* app_item_bg.png */,
+				BF946CD91EEFE777001E8AEF /* app_item_plus.png */,
+				BF946CDA1EEFE777001E8AEF /* app_item_pressed_bg.png */,
+				BF946CDB1EEFE777001E8AEF /* CustomGrid.h */,
+				BF946CDC1EEFE777001E8AEF /* CustomGrid.m */,
+			);
+			path = MoveButton;
 			sourceTree = "<group>";
 		};
 		BFF0BD901EEE62240033159D /* utility */ = {
@@ -887,6 +981,14 @@
 				BF946C811EEFCB80001E8AEF /* ScaleCollectionViewController.m */,
 				BF946CD31EEFDFC3001E8AEF /* GuideViewController.h */,
 				BF946CD41EEFDFC3001E8AEF /* GuideViewController.m */,
+				BF946CE21EEFE811001E8AEF /* MoveItemViewController.h */,
+				BF946CE31EEFE811001E8AEF /* MoveItemViewController.m */,
+				BF6CB9321EF01303007C7188 /* MenusViewController.h */,
+				BF6CB9331EF01303007C7188 /* MenusViewController.m */,
+				BF6CB93B1EF0219B007C7188 /* ScreenshotViewController.h */,
+				BF6CB93C1EF0219B007C7188 /* ScreenshotViewController.m */,
+				BF6CB93E1EF023AD007C7188 /* GuidanceRegionViewController.h */,
+				BF6CB93F1EF023AD007C7188 /* GuidanceRegionViewController.m */,
 			);
 			path = UIClass;
 			sourceTree = "<group>";
@@ -927,6 +1029,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 968Q63C2Z7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -957,6 +1064,7 @@
 				BF946CB21EEFDC42001E8AEF /* 2_02.png in Resources */,
 				BF946CB01EEFDC42001E8AEF /* 1_05.png in Resources */,
 				BF946CC01EEFDC42001E8AEF /* run3.png in Resources */,
+				BF946CDF1EEFE777001E8AEF /* app_item_plus.png in Resources */,
 				BF946CC51EEFDC42001E8AEF /* run8.png in Resources */,
 				BF946CB41EEFDC42001E8AEF /* 3_01.png in Resources */,
 				BF946CB11EEFDC42001E8AEF /* 2_01.png in Resources */,
@@ -970,6 +1078,7 @@
 				BF946CAE1EEFDC42001E8AEF /* 1_03.png in Resources */,
 				BF946CBE1EEFDC42001E8AEF /* run1.png in Resources */,
 				BFF0BE521EEE62240033159D /* city.plist in Resources */,
+				BF946CDE1EEFE777001E8AEF /* app_item_bg.png in Resources */,
 				BFF0BE1C1EEE62240033159D /* LoginViewController.xib in Resources */,
 				BF946CC31EEFDC42001E8AEF /* run6.png in Resources */,
 				BF946CB61EEFDC42001E8AEF /* 3_03.png in Resources */,
@@ -983,12 +1092,14 @@
 				BFF0BE4E1EEE62240033159D /* area.plist in Resources */,
 				BFF0BE681EEE74E00033159D /* buyao.wav in Resources */,
 				BF946CAF1EEFDC42001E8AEF /* 1_04.png in Resources */,
+				BF946CE01EEFE777001E8AEF /* app_item_pressed_bg.png in Resources */,
 				BF946CB91EEFDC42001E8AEF /* 5_01.png in Resources */,
 				BF946CC61EEFDC42001E8AEF /* run9.png in Resources */,
 				BF6A07631ED826EF00AD1E1F /* Main.storyboard in Resources */,
 				BF946CC21EEFDC42001E8AEF /* run5.png in Resources */,
 				BFF0BE1A1EEE62240033159D /* FogetKeyViewController.xib in Resources */,
 				BF946CBC1EEFDC42001E8AEF /* 5_04.png in Resources */,
+				BF946CDD1EEFE777001E8AEF /* app_item_add.png in Resources */,
 				BF946CBD1EEFDC42001E8AEF /* 5_05.png in Resources */,
 				BF946CC11EEFDC42001E8AEF /* run4.png in Resources */,
 			);
@@ -1053,6 +1164,7 @@
 				BFF0BE841EEE9BAA0033159D /* EditTableViewController.m in Sources */,
 				BFF0BE481EEE62240033159D /* WDArgument.m in Sources */,
 				BFF0BE261EEE62240033159D /* BaseTableViewCell.m in Sources */,
+				BF946CE11EEFE777001E8AEF /* CustomGrid.m in Sources */,
 				BFF0BE191EEE62240033159D /* FogetKeyViewController.m in Sources */,
 				BFF0BE221EEE62240033159D /* BaseFillTableViewController.m in Sources */,
 				BFF0BE401EEE62240033159D /* XLCycleScrollView.m in Sources */,
@@ -1071,6 +1183,7 @@
 				BF946C681EEF99DC001E8AEF /* LewPopupBackgroundView.m in Sources */,
 				BFF0BE251EEE62240033159D /* BaseTableView.m in Sources */,
 				BFF0BE361EEE62240033159D /* UIBarButtonItem+expanded.m in Sources */,
+				BF946CE71EEFED65001E8AEF /* GameKitViewController.m in Sources */,
 				BFF0BE801EEE90060033159D /* GoAPPViewController.m in Sources */,
 				BFF0BE351EEE62240033159D /* SDDataCache.m in Sources */,
 				BFF0BE601EEE68710033159D /* DistanceViewController.m in Sources */,
@@ -1088,6 +1201,7 @@
 				BFF0BE4A1EEE62240033159D /* WDMember.m in Sources */,
 				BF946C7D1EEFC234001E8AEF /* TTUITableViewZoomController.m in Sources */,
 				BF946C881EEFD217001E8AEF /* HMNavigationController.m in Sources */,
+				BF946CE41EEFE811001E8AEF /* MoveItemViewController.m in Sources */,
 				BFF0BE661EEE74530033159D /* LocalNotificationViewController.m in Sources */,
 				BF946C731EEFBEAA001E8AEF /* RadiaMenuViewController.m in Sources */,
 				BFF0BE371EEE62240033159D /* UIColor+expanded.m in Sources */,
@@ -1114,6 +1228,7 @@
 				BFF0BE2D1EEE62240033159D /* CALayer+XibConfiguration.m in Sources */,
 				BFF0BE3C1EEE62240033159D /* UINavigationBar+expanded.m in Sources */,
 				BF683D2E1EEF92A700F4F72F /* FFNavbarMenu.m in Sources */,
+				BF6CB9401EF023AD007C7188 /* GuidanceRegionViewController.m in Sources */,
 				BFF0BE751EEE82B10033159D /* GDataXMLNode.m in Sources */,
 				BFF0BE411EEE62240033159D /* NSArray+jsonstr.m in Sources */,
 				BF946C6A1EEF99DC001E8AEF /* LewPopupViewAnimationFade.m in Sources */,
@@ -1129,18 +1244,24 @@
 				BF946CD11EEFDF8C001E8AEF /* EMHintsView.m in Sources */,
 				BFF0BE281EEE62240033159D /* CeilingCollectionViewLayout.m in Sources */,
 				BF683D1C1EEF7E7900F4F72F /* CKRadialMenu.m in Sources */,
+				BF6CB9311EF011AA007C7188 /* IGLDropDownMenu.m in Sources */,
 				BFF0BE2F1EEE62240033159D /* NSData+Base64.m in Sources */,
 				BFF0BE3F1EEE62240033159D /* UIView+expanded.m in Sources */,
+				BF6CB9371EF017D5007C7188 /* RecordAudioViewController.m in Sources */,
 				BFF0BE381EEE62240033159D /* UIControl+expanded.m in Sources */,
+				BF6CB92D1EEFF64F007C7188 /* AppleGuideViewController.m in Sources */,
+				BF6CB93D1EF0219B007C7188 /* ScreenshotViewController.m in Sources */,
 				BF946C771EEFBEBC001E8AEF /* LNERadialMenu.m in Sources */,
 				BFF0BE1D1EEE62240033159D /* RegisterViewController.m in Sources */,
 				BFF0BE871EEEA2230033159D /* QRCodeViewController.m in Sources */,
+				BF6CB9341EF01303007C7188 /* MenusViewController.m in Sources */,
 				BFF0BE2B1EEE62240033159D /* HomeTabBar.m in Sources */,
 				BFF0BE1B1EEE62240033159D /* LoginViewController.m in Sources */,
 				BFF0BE2C1EEE62240033159D /* HomeTabBarController.m in Sources */,
 				BFF0BE541EEE62240033159D /* LMPopInputPasswordView.m in Sources */,
 				BFF0BE511EEE62240033159D /* BaseMapViewController.m in Sources */,
 				BFF0BE231EEE62240033159D /* BaseScrollView.m in Sources */,
+				BF6CB93A1EF01D13007C7188 /* DownTableViewController.m in Sources */,
 				BF6A075D1ED826EF00AD1E1F /* AppDelegate.m in Sources */,
 				BFF0BE211EEE62240033159D /* BaseCollectionViewLayout.m in Sources */,
 				BFF0BE341EEE62240033159D /* NSString+expanded.m in Sources */,

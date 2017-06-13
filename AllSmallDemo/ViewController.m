@@ -48,14 +48,19 @@
   @[@"发邮件",@"这是发送邮件的功能。",@"picture",@"SendEmailViewController"],
   @[@"打电话",@"这是打电话的功能。",@"picture",@"CallViewController"],
   @[@"访问通讯录",@"这是访问系统通讯录的功能。",@"picture",@"AddressBookViewController"],
+  @[@"GameKit蓝牙",@"这是GameKit的蓝牙功能。",@"picture",@"GameKitViewController"],
   @[@"蓝牙4.0",@"这是CoreBlueTooth的蓝牙功能。",@"picture",@"BlueToothViewController"],
   @[@"APP跳转",@"这是跳转到其他APP并传输相应的参数。",@"picture",@"GoAPPViewController"],
  @[@"二维码",@"这是二维码功能，包括扫描和生成",@"picture",@"QRCodeViewController"],
+ @[@"录音",@"这是录音功能的项目",@"picture",@"RecordAudioViewController"],
+                         
+                         
                          nil];
     NSArray *section2 = [NSArray arrayWithObjects:
-  @[@"友盟分享",@"discription",@"picture",@"UIViewController"],
+  @[@"苹果自带导航",@"这是苹果自带的导航功能",@"picture",@"AppleGuideViewController"],
   @[@"MOB短信验证码",@"discription",@"picture",@"UIViewController"],
-  @[@"百度地图",@"discription",@"picture",@"UIViewController"],nil];
+  @[@"百度地图",@"discription",@"picture",@"UIViewController"],
+  @[@"友盟分享",@"discription",@"picture",@"UIViewController"],nil];
     
     NSArray *section3 = [NSArray arrayWithObjects:
   @[@"name",@"discription",@"picture",@"UIViewController"],
@@ -75,6 +80,11 @@
   @[@"表格渐变出现单元格",@"向上滑动的时候单元格是渐变出现的。",@"picture",@"SlideTableViewController"],
   @[@"cell缩放的集合视图",@"集合视图的cell可以缩放",@"picture",@"ScaleCollectionViewController"],
   @[@"经典引导界面",@"这是比较经典的引导界面",@"picture",@"GuideViewController"],
+  @[@"可移动的item",@"这是类似于collectionView的编辑模式，可修改、移动和删除item",@"picture",@"MoveItemViewController"],
+  @[@"按钮列表弹出效果",@"这里有很多有趣的弹出菜单效果",@"picture",@"MenusViewController"],
+  @[@"导航栏下拉列表",@"导航栏顶部区域筛选的下拉列表效果",@"picture",@"DownTableViewController"],
+  @[@"屏幕截图",@"这是屏幕截图效果，截图之后保存到桌面",@"picture",@"ScreenshotViewController"],
+  @[@"区域定位计算",@"这里包含定位，判断是否离开区域，计算行驶距离，速度，平均速度等",@"picture",@"GuidanceRegionViewController"],
 nil];
     NSArray *section7 = [NSArray arrayWithObjects:
   @[@"圆形出来菜单",@"这是很好用的圆形出来的按钮，可以控制间距、大小等。",@"picture",@"RadialMenuViewController"],
@@ -87,7 +97,7 @@ nil];
                          nil];
     NSArray *section8 = [NSArray arrayWithObjects:
   @[@"页面转场动画",@"界面布局样式修改后切换到新的界面的动画，是个枚举类型",@"picture",@"GuideViewController"],
-  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
+  @[@"name",@"discription",@"picture",@"MoveItemViewController"],nil];
     NSArray *section9 = [NSArray arrayWithObjects:
   @[@"name",@"discription",@"picture",@"UIViewController"],
   @[@"name",@"discription",@"picture",@"UIViewController"],nil];

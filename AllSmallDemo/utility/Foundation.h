@@ -33,7 +33,8 @@ manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"appl
 #define APPW              [UIScreen mainScreen].bounds.size.width
 #define APPH              [UIScreen mainScreen].bounds.size.height
 #define ApplicationH      [UIScreen mainScreen].applicationFrame.size.height
-
+#define SP_W(width)       APPW*(width/320.0)
+#define SP_H(height)      APPH*(height/480.0)
 #define W(obj)            (!obj?0:(obj).frame.size.width)
 #define H(obj)            (!obj?0:(obj).frame.size.height)
 #define X(obj)            (!obj?0:(obj).frame.origin.x)

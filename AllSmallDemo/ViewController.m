@@ -4,6 +4,7 @@
 #import "ViewController.h"
 #import "ThirdListTableView.h"
 #import <FLAnimatedImage/FLAnimatedImage.h>
+#import "AllSmallDemo-Swift.h"
 @interface AllSmallCell:UITableViewCell
 @property(nonatomic,strong)UILabel *nameLabel;
 @property(nonatomic,strong)UILabel *detailLabel;
@@ -17,6 +18,8 @@
         self.nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 10, APPW-20, 20)];
         self.detailLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 30, APPW-20, 60)];
         self.detailLabel.numberOfLines = 0;
+        self.detailLabel.font = fontnomal;
+        self.detailLabel.textColor = SMALLColor;
         [self addSubview:self.nameLabel];
         [self addSubview:self.detailLabel];
     }
@@ -54,8 +57,7 @@
  @[@"二维码",@"这是二维码功能，包括扫描和生成",@"picture",@"QRCodeViewController"],
  @[@"录音",@"这是录音功能的项目",@"picture",@"RecordAudioViewController"],
                          
-                         
-                         nil];
+                      nil];
     NSArray *section2 = [NSArray arrayWithObjects:
   @[@"苹果自带导航",@"这是苹果自带的导航功能",@"picture",@"AppleGuideViewController"],
   @[@"MOB短信验证码",@"discription",@"picture",@"UIViewController"],
@@ -68,10 +70,12 @@
     
     NSArray *section4 = [NSArray arrayWithObjects:
   @[@"XML解析",@"这是XML数据格式解析",@"picture",@"XMLParseViewController"],
-  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
+  @[@"压缩与解压缩",@"这是压缩与解压缩的功能",@"picture",@"UnAchiveViewController"],nil];
     NSArray *section5 = [NSArray arrayWithObjects:
-  @[@"name",@"discription",@"picture",@"UIViewController"],
-  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
+  @[@"大文件下载",@"这是网络请求中大文件的下载带有断点续传功能",@"picture",@"DownLoadBigFileViewController"],
+  @[@"数据加密",@"这里面包含许多种加密算法",@"picture",@"EncryptionViewController"],
+  @[@"NSSURLSession使用",@"是使用NSURLSession的一些方法",@"picture",@"URLSessionTaskViewController"],
+  @[@"name",@"dsf",@"picture",@"UIViewController"],nil];
     NSArray *section6 = [NSArray arrayWithObjects:
   @[@"表格编辑模式",@"这是表格的编辑模式包括增删和移动",@"picture",@"EditTableViewController"],
   @[@"搜索控制器",@"这是搜索代理控制器，可以处理搜索结果",@"picture",@"SearchResaltViewController"],
@@ -85,7 +89,16 @@
   @[@"导航栏下拉列表",@"导航栏顶部区域筛选的下拉列表效果",@"picture",@"DownTableViewController"],
   @[@"屏幕截图",@"这是屏幕截图效果，截图之后保存到桌面",@"picture",@"ScreenshotViewController"],
   @[@"区域定位计算",@"这里包含定位，判断是否离开区域，计算行驶距离，速度，平均速度等",@"picture",@"GuidanceRegionViewController"],
-nil];
+  @[@"人生轨迹",@"这是轨迹沿线图",@"picture",@"JourneyViewController"],
+  @[@"手势解锁",@"这是绘制解锁的功能",@"picture",@"UnlockViewController"],
+  @[@"手势密码",@"这是手势绘制、验证和修改密码的功能",@"picture",@"GesturePWDViewController"],
+  @[@"太极",@"这是太极动画效果",@"picture",@"TaijiViewController"],
+  @[@"头视图渐变内容联动",@"这是头视图和内容视图联动，实现了头部视图文字颜色渐变",@"picture",@"GradientViewController"],
+  @[@"涂鸦画板",@"这是绘画面板，可以在上面作图",@"picture",@"PainViewController"],
+  @[@"图书展览馆",@"这是书记展示界面",@"picture",@"BooksViewController"],
+                         
+                         
+                         nil];
     NSArray *section7 = [NSArray arrayWithObjects:
   @[@"圆形出来菜单",@"这是很好用的圆形出来的按钮，可以控制间距、大小等。",@"picture",@"RadialMenuViewController"],
   @[@"导航栏下拉菜单",@"从导航栏上面往下出现的菜单按钮",@"picture",@"NaviMenuViewController"],
@@ -94,6 +107,7 @@ nil];
   @[@"页面转场动画",@"界面布局样式修改后切换到新的界面的动画，是个枚举类型",@"picture",@"TransitionViewController"],
   @[@"动画组",@"这是几个动画效果结合在一起形成的动画",@"picture",@"AnimationsViewController"],
   @[@"有趣的欢迎界面",@"这是非常有趣的欢迎界面",@"picture",@"WelcomeViewController"],
+  @[@"顶部提示框",@"这是从顶部往下弹出的提示窗口",@"picture",@"TopHUDViewController"],
                          nil];
     NSArray *section8 = [NSArray arrayWithObjects:
   @[@"页面转场动画",@"界面布局样式修改后切换到新的界面的动画，是个枚举类型",@"picture",@"GuideViewController"],
@@ -194,6 +208,9 @@ nil];
     NSArray *a = self.dataArray[indexPath.section][@"array"][indexPath.row];
     NSString *className = a[3];
     UIViewController *vc = [[NSClassFromString(className) alloc]init];
+    if(!vc){
+        vc = [[NSClassFromString([NSString stringWithFormat:@"AllSmallDemo.%@",className]) alloc]init];
+    }
     vc.title = a[0];
     vc.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController pushViewController:vc animated:YES];

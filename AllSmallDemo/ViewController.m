@@ -56,7 +56,7 @@
   @[@"APP跳转",@"这是跳转到其他APP并传输相应的参数。",@"picture",@"GoAPPViewController"],
  @[@"二维码",@"这是二维码功能，包括扫描和生成",@"picture",@"QRCodeViewController"],
  @[@"录音",@"这是录音功能的项目",@"picture",@"RecordAudioViewController"],
-                         
+ @[@"指南针",@"这是指南针项目",@"picture",@"CompassViewController"],                         
                       nil];
     NSArray *section2 = [NSArray arrayWithObjects:
   @[@"苹果自带导航",@"这是苹果自带的导航功能",@"picture",@"AppleGuideViewController"],
@@ -70,10 +70,10 @@
     
     NSArray *section4 = [NSArray arrayWithObjects:
   @[@"XML解析",@"这是XML数据格式解析",@"picture",@"XMLParseViewController"],
-  @[@"压缩与解压缩",@"这是压缩与解压缩的功能",@"picture",@"UnAchiveViewController"],nil];
+  @[@"压缩与解压缩",@"这是压缩与解压缩的功能,需要引入libz.tbd库",@"picture",@"UnAchiveViewController"],nil];
     NSArray *section5 = [NSArray arrayWithObjects:
   @[@"大文件下载",@"这是网络请求中大文件的下载带有断点续传功能",@"picture",@"DownLoadBigFileViewController"],
-  @[@"数据加密",@"这里面包含许多种加密算法",@"picture",@"EncryptionViewController"],
+  @[@"登陆与钥匙串加密还有cookies",@"这里面包含许多种加密算法和钥匙串记录账号密码以及读取cookies的功能",@"picture",@"EncryptionViewController"],
   @[@"NSSURLSession使用",@"是使用NSURLSession的一些方法",@"picture",@"URLSessionTaskViewController"],
   @[@"name",@"dsf",@"picture",@"UIViewController"],nil];
     NSArray *section6 = [NSArray arrayWithObjects:
@@ -108,22 +108,31 @@
   @[@"动画组",@"这是几个动画效果结合在一起形成的动画",@"picture",@"AnimationsViewController"],
   @[@"有趣的欢迎界面",@"这是非常有趣的欢迎界面",@"picture",@"WelcomeViewController"],
   @[@"顶部提示框",@"这是从顶部往下弹出的提示窗口",@"picture",@"TopHUDViewController"],
+  @[@"下拉放大",@"这是表格的下拉放大功能",@"picture",@"DropScaleViewController"],
+  @[@"下雪特效",@"这是下雪的特效",@"picture",@"SnowViewController"],
+  @[@"圆形出来按钮",@"这是圆形出来的按钮",@"picture",@"RoundOutButtonViewController"],
+  @[@"转动按钮",@"这是转动按钮，可以让要选择的按钮转动到当前位置",@"picture",@"TurnMenuViewController"],
+  @[@"自定义下拉刷新动画",@"这是自定义的有趣的下拉刷新样子",@"picture",@"AnimatedRefreshViewController"],                         
+  @[@"点击出现放大菜单",@"这是点击出现放大的按钮效果",@"picture",@"AnimatedMenuViewController"],
+  @[@"圆形旋转出现的菜单",@"这是点击圆形旋转之后出现并在选择之后旋转收回的按钮效果",@"picture",@"TurnRoundMenuViewController"],
+  @[@"核心动画",@"这是基本动画和关键帧动画",@"picture",@"CoreAnimationViewController"],
+                         
                          nil];
     NSArray *section8 = [NSArray arrayWithObjects:
-  @[@"页面转场动画",@"界面布局样式修改后切换到新的界面的动画，是个枚举类型",@"picture",@"GuideViewController"],
-  @[@"name",@"discription",@"picture",@"MoveItemViewController"],nil];
+  @[@"音视频在线播放及音效播放",@"这是音视频在线播放功能还有音效播放的功能",@"picture",@"MediaPlayViewController"],
+  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
     NSArray *section9 = [NSArray arrayWithObjects:
   @[@"name",@"discription",@"picture",@"UIViewController"],
   @[@"name",@"discription",@"picture",@"UIViewController"],nil];
     NSArray *section10= [NSArray arrayWithObjects:
-  @[@"name",@"discription",@"picture",@"UIViewController"],
+  @[@"正则表达式",@"这是正则表达式的一些使用方法,使用时需要包含libicucore库并使Regexkitlit为-fno-objc-arc",@"picture",@"RegexViewController"],
   @[@"name",@"discription",@"picture",@"UIViewController"],nil];
     self.dataArray = [NSMutableArray arrayWithObjects:
   @{@"name":@"系统功能",@"array":section1},@{@"name":@"第三方服务",@"array":section2},
   @{@"name":@"数据库处理",@"array":section3},@{@"name":@"数据解析",@"array":section4},
   @{@"name":@"网络传输",@"array":section5},@{@"name":@"UI界面设计",@"array":section6},
-  @{@"name":@"特效动画",@"array":section7},@{@"name":@"aaa",@"array":section8},
-  @{@"name":@"aaa",@"array":section9},@{@"name":@"aaa",@"array":section10}, nil];
+  @{@"name":@"特效动画",@"array":section7},@{@"name":@"多媒体",@"array":section8},
+  @{@"name":@"aaa",@"array":section9},@{@"name":@"其它",@"array":section10}, nil];
     self.mTableView = [[ThirdListTableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width,self.view.frame.size.height)];
     self.mTableView.delegate = self;
     [self.view addSubview:self.mTableView];

@@ -41,7 +41,9 @@
     // <47e58207 31340f18 ed83ba54 f999641a 3d68bc7b f3e2db29 953188ec 7d0cecfb>
     // <286c3bde 0bd3b122 68be655f 25ed2702 38e31cec 9d54da9f 1c62325a 93be801e>
 }
-
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
+    NSLog(@"%@",error);
+}
 /*
  ios7以前苹果支持多任务, iOS7以前的多任务是假的多任务
  而iOS7开始苹果才真正的推出了多任务

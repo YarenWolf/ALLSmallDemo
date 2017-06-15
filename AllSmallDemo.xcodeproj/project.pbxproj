@@ -51,6 +51,27 @@
 		BF27192F1EF1277B00F10F17 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = BF27192E1EF1277B00F10F17 /* NSString+Hash.m */; };
 		BF2719321EF127C800F10F17 /* EncryptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2719311EF127C800F10F17 /* EncryptionViewController.m */; };
 		BF2719351EF12AEF00F10F17 /* URLSessionTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2719341EF12AEF00F10F17 /* URLSessionTaskViewController.m */; };
+		BF533BAF1EF2336600D874EC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BF533BAE1EF2336600D874EC /* libz.tbd */; };
+		BF533BB21EF2347200D874EC /* DropScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BB11EF2347200D874EC /* DropScaleViewController.m */; };
+		BF533BB51EF2351500D874EC /* SnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BB41EF2351500D874EC /* SnowViewController.m */; };
+		BF533BBC1EF237F300D874EC /* MediaPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BBB1EF237F300D874EC /* MediaPlayViewController.m */; };
+		BF533BC31EF2453F00D874EC /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF533BC21EF2453F00D874EC /* a.wav */; };
+		BF533BC61EF25D6800D874EC /* LIVBubbleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BC51EF25D6800D874EC /* LIVBubbleMenu.m */; };
+		BF533BC91EF25D9100D874EC /* RoundOutButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BC81EF25D9100D874EC /* RoundOutButtonViewController.m */; };
+		BF533BCE1EF2634A00D874EC /* RegexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BCD1EF2634A00D874EC /* RegexViewController.m */; };
+		BF533BD21EF2637C00D874EC /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BD11EF2637C00D874EC /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BF533BD41EF2673D00D874EC /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BF533BD31EF2673D00D874EC /* libicucore.tbd */; };
+		BF533BDA1EF2694100D874EC /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BD91EF2694100D874EC /* CompassViewController.m */; };
+		BF533BDD1EF26D7000D874EC /* EFAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BDC1EF26D7000D874EC /* EFAnimationViewController.m */; };
+		BF533BE01EF26DA300D874EC /* TurnMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BDF1EF26DA300D874EC /* TurnMenuViewController.m */; };
+		BF533BE51EF272D800D874EC /* YALSunnyRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BE31EF272D800D874EC /* YALSunnyRefreshControl.m */; };
+		BF533BE61EF272D800D874EC /* YALSunnyRefreshControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF533BE41EF272D800D874EC /* YALSunnyRefreshControl.xib */; };
+		BF533BE91EF2732600D874EC /* AnimatedRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533BE81EF2732600D874EC /* AnimatedRefreshViewController.m */; };
+		BF533C611EF27DED00D874EC /* AnimatedMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533C601EF27DED00D874EC /* AnimatedMenuViewController.m */; };
+		BF533C641EF27DFF00D874EC /* ASRadialMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533C631EF27DFF00D874EC /* ASRadialMenu.m */; };
+		BF533C661EF2824200D874EC /* ASRadialMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF533C651EF2824200D874EC /* ASRadialMenu.swift */; };
+		BF533C681EF2829F00D874EC /* TurnRoundMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF533C671EF2829F00D874EC /* TurnRoundMenuViewController.swift */; };
+		BF533C6B1EF28C9200D874EC /* CoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF533C6A1EF28C9200D874EC /* CoreAnimationViewController.m */; };
 		BF5D549D1EF13B3B0022AEC7 /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5D549C1EF13B3B0022AEC7 /* BooksViewController.m */; };
 		BF5D54A01EF13B4B0022AEC7 /* GSBookShelfView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5D549F1EF13B4B0022AEC7 /* GSBookShelfView.m */; };
 		BF5D54A31EF145D40022AEC7 /* UnAchiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5D54A21EF145D40022AEC7 /* UnAchiveViewController.m */; };
@@ -297,6 +318,42 @@
 		BF2719311EF127C800F10F17 /* EncryptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionViewController.m; sourceTree = "<group>"; };
 		BF2719331EF12AEF00F10F17 /* URLSessionTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionTaskViewController.h; sourceTree = "<group>"; };
 		BF2719341EF12AEF00F10F17 /* URLSessionTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLSessionTaskViewController.m; sourceTree = "<group>"; };
+		BF533BAE1EF2336600D874EC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BF533BB01EF2347200D874EC /* DropScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropScaleViewController.h; sourceTree = "<group>"; };
+		BF533BB11EF2347200D874EC /* DropScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropScaleViewController.m; sourceTree = "<group>"; };
+		BF533BB31EF2351500D874EC /* SnowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowViewController.h; sourceTree = "<group>"; };
+		BF533BB41EF2351500D874EC /* SnowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnowViewController.m; sourceTree = "<group>"; };
+		BF533BBA1EF237F300D874EC /* MediaPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaPlayViewController.h; sourceTree = "<group>"; };
+		BF533BBB1EF237F300D874EC /* MediaPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaPlayViewController.m; sourceTree = "<group>"; };
+		BF533BC21EF2453F00D874EC /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = a.wav; sourceTree = "<group>"; };
+		BF533BC41EF25D6800D874EC /* LIVBubbleMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIVBubbleMenu.h; sourceTree = "<group>"; };
+		BF533BC51EF25D6800D874EC /* LIVBubbleMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIVBubbleMenu.m; sourceTree = "<group>"; };
+		BF533BC71EF25D9100D874EC /* RoundOutButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundOutButtonViewController.h; sourceTree = "<group>"; };
+		BF533BC81EF25D9100D874EC /* RoundOutButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundOutButtonViewController.m; sourceTree = "<group>"; };
+		BF533BCC1EF2634A00D874EC /* RegexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexViewController.h; sourceTree = "<group>"; };
+		BF533BCD1EF2634A00D874EC /* RegexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexViewController.m; sourceTree = "<group>"; };
+		BF533BD01EF2637C00D874EC /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		BF533BD11EF2637C00D874EC /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		BF533BD31EF2673D00D874EC /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		BF533BD81EF2694100D874EC /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
+		BF533BD91EF2694100D874EC /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
+		BF533BDB1EF26D7000D874EC /* EFAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAnimationViewController.h; sourceTree = "<group>"; };
+		BF533BDC1EF26D7000D874EC /* EFAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAnimationViewController.m; sourceTree = "<group>"; };
+		BF533BDE1EF26DA300D874EC /* TurnMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurnMenuViewController.h; sourceTree = "<group>"; };
+		BF533BDF1EF26DA300D874EC /* TurnMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurnMenuViewController.m; sourceTree = "<group>"; };
+		BF533BE21EF272D800D874EC /* YALSunnyRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSunnyRefreshControl.h; sourceTree = "<group>"; };
+		BF533BE31EF272D800D874EC /* YALSunnyRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSunnyRefreshControl.m; sourceTree = "<group>"; };
+		BF533BE41EF272D800D874EC /* YALSunnyRefreshControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YALSunnyRefreshControl.xib; sourceTree = "<group>"; };
+		BF533BE71EF2732600D874EC /* AnimatedRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedRefreshViewController.h; sourceTree = "<group>"; };
+		BF533BE81EF2732600D874EC /* AnimatedRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedRefreshViewController.m; sourceTree = "<group>"; };
+		BF533C5F1EF27DED00D874EC /* AnimatedMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedMenuViewController.h; sourceTree = "<group>"; };
+		BF533C601EF27DED00D874EC /* AnimatedMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedMenuViewController.m; sourceTree = "<group>"; };
+		BF533C621EF27DFF00D874EC /* ASRadialMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRadialMenu.h; sourceTree = "<group>"; };
+		BF533C631EF27DFF00D874EC /* ASRadialMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRadialMenu.m; sourceTree = "<group>"; };
+		BF533C651EF2824200D874EC /* ASRadialMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASRadialMenu.swift; sourceTree = "<group>"; };
+		BF533C671EF2829F00D874EC /* TurnRoundMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnRoundMenuViewController.swift; sourceTree = "<group>"; };
+		BF533C691EF28C9200D874EC /* CoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationViewController.h; sourceTree = "<group>"; };
+		BF533C6A1EF28C9200D874EC /* CoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationViewController.m; sourceTree = "<group>"; };
 		BF5D549B1EF13B3B0022AEC7 /* BooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksViewController.h; sourceTree = "<group>"; };
 		BF5D549C1EF13B3B0022AEC7 /* BooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksViewController.m; sourceTree = "<group>"; };
 		BF5D549E1EF13B4B0022AEC7 /* GSBookShelfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBookShelfView.h; sourceTree = "<group>"; };
@@ -576,6 +633,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF533BD41EF2673D00D874EC /* libicucore.tbd in Frameworks */,
+				BF533BAF1EF2336600D874EC /* libz.tbd in Frameworks */,
 				BF946CEF1EEFF218001E8AEF /* Foundation.framework in Frameworks */,
 				BF946CED1EEFF212001E8AEF /* UIKit.framework in Frameworks */,
 				BF946CEB1EEFEF57001E8AEF /* CoreGraphics.framework in Frameworks */,
@@ -591,6 +650,8 @@
 		82BC51984B79138FABD24A61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF533BD31EF2673D00D874EC /* libicucore.tbd */,
+				BF533BAE1EF2336600D874EC /* libz.tbd */,
 				BF946CEE1EEFF218001E8AEF /* Foundation.framework */,
 				BF946CEC1EEFF212001E8AEF /* UIKit.framework */,
 				BF946CEA1EEFEF57001E8AEF /* CoreGraphics.framework */,
@@ -650,6 +711,8 @@
 				BF15E1FC1EF0D08900638149 /* SendMessageViewController.m */,
 				BF15E1FD1EF0D08900638149 /* XMLParseViewController.h */,
 				BF15E1FE1EF0D08900638149 /* XMLParseViewController.m */,
+				BF533BD81EF2694100D874EC /* CompassViewController.h */,
+				BF533BD91EF2694100D874EC /* CompassViewController.m */,
 			);
 			path = "系统功能";
 			sourceTree = "<group>";
@@ -706,6 +769,43 @@
 			path = "网络";
 			sourceTree = "<group>";
 		};
+		BF533BB91EF237DE00D874EC /* 媒体播放 */ = {
+			isa = PBXGroup;
+			children = (
+				BF533BBA1EF237F300D874EC /* MediaPlayViewController.h */,
+				BF533BBB1EF237F300D874EC /* MediaPlayViewController.m */,
+			);
+			path = "媒体播放";
+			sourceTree = "<group>";
+		};
+		BF533BCB1EF2633900D874EC /* 其它 */ = {
+			isa = PBXGroup;
+			children = (
+				BF533BCC1EF2634A00D874EC /* RegexViewController.h */,
+				BF533BCD1EF2634A00D874EC /* RegexViewController.m */,
+			);
+			path = "其它";
+			sourceTree = "<group>";
+		};
+		BF533BCF1EF2637C00D874EC /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				BF533BD01EF2637C00D874EC /* RegexKitLite.h */,
+				BF533BD11EF2637C00D874EC /* RegexKitLite.m */,
+			);
+			path = RegexKitLite;
+			sourceTree = "<group>";
+		};
+		BF533BE11EF272D800D874EC /* YALSunnyRefreshControll */ = {
+			isa = PBXGroup;
+			children = (
+				BF533BE21EF272D800D874EC /* YALSunnyRefreshControl.h */,
+				BF533BE31EF272D800D874EC /* YALSunnyRefreshControl.m */,
+				BF533BE41EF272D800D874EC /* YALSunnyRefreshControl.xib */,
+			);
+			path = YALSunnyRefreshControll;
+			sourceTree = "<group>";
+		};
 		BF5D54A41EF145DE0022AEC7 /* SSZipArchive */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,6 +851,21 @@
 				BF946C8D1EEFDC26001E8AEF /* WelcomeViewController.m */,
 				BF2718E11EF10A6D00F10F17 /* TopHUDViewController.h */,
 				BF2718E21EF10A6D00F10F17 /* TopHUDViewController.m */,
+				BF533BB01EF2347200D874EC /* DropScaleViewController.h */,
+				BF533BB11EF2347200D874EC /* DropScaleViewController.m */,
+				BF533BB31EF2351500D874EC /* SnowViewController.h */,
+				BF533BB41EF2351500D874EC /* SnowViewController.m */,
+				BF533BC71EF25D9100D874EC /* RoundOutButtonViewController.h */,
+				BF533BC81EF25D9100D874EC /* RoundOutButtonViewController.m */,
+				BF533BDE1EF26DA300D874EC /* TurnMenuViewController.h */,
+				BF533BDF1EF26DA300D874EC /* TurnMenuViewController.m */,
+				BF533BE71EF2732600D874EC /* AnimatedRefreshViewController.h */,
+				BF533BE81EF2732600D874EC /* AnimatedRefreshViewController.m */,
+				BF533C5F1EF27DED00D874EC /* AnimatedMenuViewController.h */,
+				BF533C601EF27DED00D874EC /* AnimatedMenuViewController.m */,
+				BF533C671EF2829F00D874EC /* TurnRoundMenuViewController.swift */,
+				BF533C691EF28C9200D874EC /* CoreAnimationViewController.h */,
+				BF533C6A1EF28C9200D874EC /* CoreAnimationViewController.m */,
 			);
 			path = "特效动画";
 			sourceTree = "<group>";
@@ -787,6 +902,7 @@
 				BFF0BD901EEE62240033159D /* utility */,
 				BF8E21EB1EEE5C4A006B2C0A /* Untitled.gif */,
 				BFF0BE671EEE74E00033159D /* buyao.wav */,
+				BF533BC21EF2453F00D874EC /* a.wav */,
 				BF6A07611ED826EF00AD1E1F /* Main.storyboard */,
 				BF6A07641ED826EF00AD1E1F /* Assets.xcassets */,
 				BF6A07661ED826EF00AD1E1F /* LaunchScreen.storyboard */,
@@ -808,6 +924,15 @@
 		BF6A07701ED8276E00AD1E1F /* ThirdFramework */ = {
 			isa = PBXGroup;
 			children = (
+				BF533C651EF2824200D874EC /* ASRadialMenu.swift */,
+				BF533C621EF27DFF00D874EC /* ASRadialMenu.h */,
+				BF533C631EF27DFF00D874EC /* ASRadialMenu.m */,
+				BF533BE11EF272D800D874EC /* YALSunnyRefreshControll */,
+				BF533BDB1EF26D7000D874EC /* EFAnimationViewController.h */,
+				BF533BDC1EF26D7000D874EC /* EFAnimationViewController.m */,
+				BF533BCF1EF2637C00D874EC /* RegexKitLite */,
+				BF533BC41EF25D6800D874EC /* LIVBubbleMenu.h */,
+				BF533BC51EF25D6800D874EC /* LIVBubbleMenu.m */,
 				BF5D54A41EF145DE0022AEC7 /* SSZipArchive */,
 				BF5D549E1EF13B4B0022AEC7 /* GSBookShelfView.h */,
 				BF5D549F1EF13B4B0022AEC7 /* GSBookShelfView.m */,
@@ -874,6 +999,8 @@
 		BF8E21E11EEE4072006B2C0A /* AllSmallClass */ = {
 			isa = PBXGroup;
 			children = (
+				BF533BCB1EF2633900D874EC /* 其它 */,
+				BF533BB91EF237DE00D874EC /* 媒体播放 */,
 				BF2719291EF1250E00F10F17 /* 网络 */,
 				BF15E1D91EF0D08900638149 /* 系统功能 */,
 				BF6CB92A1EEFF63E007C7188 /* 第三方 */,
@@ -1299,10 +1426,12 @@
 				BF946CDE1EEFE777001E8AEF /* app_item_bg.png in Resources */,
 				BFF0BE1C1EEE62240033159D /* LoginViewController.xib in Resources */,
 				BF946CC31EEFDC42001E8AEF /* run6.png in Resources */,
+				BF533BC31EF2453F00D874EC /* a.wav in Resources */,
 				BF946CB61EEFDC42001E8AEF /* 3_03.png in Resources */,
 				BF946CBA1EEFDC42001E8AEF /* 5_02.png in Resources */,
 				BF946CB31EEFDC42001E8AEF /* 2_03.png in Resources */,
 				BF946CB71EEFDC42001E8AEF /* 3_04.png in Resources */,
+				BF533BE61EF272D800D874EC /* YALSunnyRefreshControl.xib in Resources */,
 				BF6A07651ED826EF00AD1E1F /* Assets.xcassets in Resources */,
 				BF946CAD1EEFDC42001E8AEF /* 1_02.png in Resources */,
 				BF2718D01EF0E54F00F10F17 /* CLLockVC.xib in Resources */,
@@ -1383,12 +1512,17 @@
 				BFF0BE481EEE62240033159D /* WDArgument.m in Sources */,
 				BFF0BE261EEE62240033159D /* BaseTableViewCell.m in Sources */,
 				BF946CE11EEFE777001E8AEF /* CustomGrid.m in Sources */,
+				BF533BCE1EF2634A00D874EC /* RegexViewController.m in Sources */,
+				BF533BBC1EF237F300D874EC /* MediaPlayViewController.m in Sources */,
+				BF533C681EF2829F00D874EC /* TurnRoundMenuViewController.swift in Sources */,
+				BF533BDA1EF2694100D874EC /* CompassViewController.m in Sources */,
 				BF15E2051EF0D08900638149 /* DistanceViewController.m in Sources */,
 				BFF0BE191EEE62240033159D /* FogetKeyViewController.m in Sources */,
 				BFF0BE221EEE62240033159D /* BaseFillTableViewController.m in Sources */,
 				BFF0BE401EEE62240033159D /* XLCycleScrollView.m in Sources */,
 				BF946CD01EEFDF8C001E8AEF /* EMHint.m in Sources */,
 				BFF0BE3A1EEE62240033159D /* UIImage+expanded.m in Sources */,
+				BF533C611EF27DED00D874EC /* AnimatedMenuViewController.m in Sources */,
 				BFF0BE201EEE62240033159D /* BaseCollectionViewCell.m in Sources */,
 				BF946C6B1EEF99DC001E8AEF /* LewPopupViewAnimationSlide.m in Sources */,
 				BF5D549D1EF13B3B0022AEC7 /* BooksViewController.m in Sources */,
@@ -1406,6 +1540,8 @@
 				BF15E2081EF0D08900638149 /* GoAPPViewController.m in Sources */,
 				BF946C681EEF99DC001E8AEF /* LewPopupBackgroundView.m in Sources */,
 				BF5D54B11EF145DE0022AEC7 /* ioapi.c in Sources */,
+				BF533BB51EF2351500D874EC /* SnowViewController.m in Sources */,
+				BF533BDD1EF26D7000D874EC /* EFAnimationViewController.m in Sources */,
 				BF15E2071EF0D08900638149 /* GameKitViewController.m in Sources */,
 				BFF0BE251EEE62240033159D /* BaseTableView.m in Sources */,
 				BFF0BE361EEE62240033159D /* UIBarButtonItem+expanded.m in Sources */,
@@ -1447,7 +1583,9 @@
 				BF6A07601ED826EF00AD1E1F /* ViewController.m in Sources */,
 				BF683D201EEF7F1E00F4F72F /* RadialMenuViewController.m in Sources */,
 				BFF0BE8A1EEEA7600033159D /* SearchResaltViewController.m in Sources */,
+				BF533BE51EF272D800D874EC /* YALSunnyRefreshControl.m in Sources */,
 				BF6A07781ED833ED00AD1E1F /* ThirdListTableView.m in Sources */,
+				BF533BC61EF25D6800D874EC /* LIVBubbleMenu.m in Sources */,
 				BFF0BE241EEE62240033159D /* BaseStaticTableView.m in Sources */,
 				BF946CD51EEFDFC3001E8AEF /* GuideViewController.m in Sources */,
 				BF15E2141EF0DD0D00638149 /* YZLockView.m in Sources */,
@@ -1468,20 +1606,25 @@
 				BF2719351EF12AEF00F10F17 /* URLSessionTaskViewController.m in Sources */,
 				BFF0BE421EEE62240033159D /* NSDictionary+JSONSTR.m in Sources */,
 				BFF0BE551EEE62240033159D /* MyPlayTool.m in Sources */,
+				BF533BD21EF2637C00D874EC /* RegexKitLite.m in Sources */,
 				BF15E20F1EF0D08900638149 /* SendEmailViewController.m in Sources */,
 				BF2719211EF1216900F10F17 /* PainViewController.m in Sources */,
 				BF683D2B1EEF929800F4F72F /* NaviMenuViewController.m in Sources */,
+				BF533BC91EF25D9100D874EC /* RoundOutButtonViewController.m in Sources */,
 				BF5D54B41EF145DE0022AEC7 /* zip.c in Sources */,
 				BFF0BE561EEE62240033159D /* NetEngine.m in Sources */,
 				BFF0BE3D1EEE62240033159D /* UINavigationController+expanded.m in Sources */,
 				BFF0BE4D1EEE62240033159D /* WDTypeEncoding.m in Sources */,
 				BFF0BE4F1EEE62240033159D /* AreaPickView.m in Sources */,
 				BF15E1D81EF0CF1800638149 /* JourneyViewController.m in Sources */,
+				BF533C661EF2824200D874EC /* ASRadialMenu.swift in Sources */,
 				BF946CD11EEFDF8C001E8AEF /* EMHintsView.m in Sources */,
+				BF533C641EF27DFF00D874EC /* ASRadialMenu.m in Sources */,
 				BFF0BE281EEE62240033159D /* CeilingCollectionViewLayout.m in Sources */,
 				BF27191E1EF116E300F10F17 /* PGScView.m in Sources */,
 				BF683D1C1EEF7E7900F4F72F /* CKRadialMenu.m in Sources */,
 				BF15E2101EF0D08900638149 /* SendMessageViewController.m in Sources */,
+				BF533BB21EF2347200D874EC /* DropScaleViewController.m in Sources */,
 				BF6CB9311EF011AA007C7188 /* IGLDropDownMenu.m in Sources */,
 				BFF0BE2F1EEE62240033159D /* NSData+Base64.m in Sources */,
 				BF2719321EF127C800F10F17 /* EncryptionViewController.m in Sources */,
@@ -1493,6 +1636,8 @@
 				BF946C771EEFBEBC001E8AEF /* LNERadialMenu.m in Sources */,
 				BFF0BE1D1EEE62240033159D /* RegisterViewController.m in Sources */,
 				BF6CB9341EF01303007C7188 /* MenusViewController.m in Sources */,
+				BF533BE91EF2732600D874EC /* AnimatedRefreshViewController.m in Sources */,
+				BF533BE01EF26DA300D874EC /* TurnMenuViewController.m in Sources */,
 				BF27192C1EF1254800F10F17 /* DownLoadBigFileViewController.m in Sources */,
 				BFF0BE2B1EEE62240033159D /* HomeTabBar.m in Sources */,
 				BF27192F1EF1277B00F10F17 /* NSString+Hash.m in Sources */,
@@ -1522,6 +1667,7 @@
 				BF946C8B1EEFD3F8001E8AEF /* AnimationsViewController.m in Sources */,
 				BFF0BE311EEE62240033159D /* NSDictionary+expanded.m in Sources */,
 				BF5D54B51EF145DE0022AEC7 /* SSZipArchive.m in Sources */,
+				BF533C6B1EF28C9200D874EC /* CoreAnimationViewController.m in Sources */,
 				BF6A075A1ED826EE00AD1E1F /* main.m in Sources */,
 				BFF0BE461EEE62240033159D /* NSObject+WDMember.m in Sources */,
 				BFF0BE3B1EEE62240033159D /* UILabel+expanded.m in Sources */,

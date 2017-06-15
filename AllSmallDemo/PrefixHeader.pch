@@ -8,6 +8,7 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "Foundation.h"
@@ -23,4 +24,5 @@
 #import "UIGestureRecognizer+expanded.h"
 #import "UIColor+expanded.h"
 #import "NetEngine.h"
+#endif
 #endif /* PrefixHeader_pch */

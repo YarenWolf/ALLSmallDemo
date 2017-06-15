@@ -21,4 +21,10 @@ target 'AllSmallDemo' do
     pod 'XJSONKit'
     
     pod 'MLEmojiLabel' #https://github.com/molon/MLEmojiLabel
+    
+    
+    pod 'SSKeychain'  #https://github.com/Mingriweiji-github/sskeychain-master
+    
+    pod 'pop', '~> 1.0' #https://github.com/facebook/pop
+    
 end

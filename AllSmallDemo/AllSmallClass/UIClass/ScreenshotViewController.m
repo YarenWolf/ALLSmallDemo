@@ -28,6 +28,11 @@
         NSData *data = UIImagePNGRepresentation(newImage);
         NSString *filePath = [@"/Users/franklin/Desktop" stringByAppendingPathComponent:@"view.png"];
         [data writeToFile:filePath atomically:YES];
+//        5.把得到的图片保存到系统相册内 最后一个参数是用来传参的
+        UIImageWriteToSavedPhotosAlbum(newImage, self, @selector(savedPicToPhoto), nil);
     });
+}
+-(void)savedPicToPhoto{
+    NSLog(@"图片保存成功");
 }
 @end

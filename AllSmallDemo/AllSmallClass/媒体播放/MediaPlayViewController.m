@@ -8,7 +8,7 @@
 
 #import "MediaPlayViewController.h"
 #import <AVFoundation/AVFoundation.h>
-
+#import <MediaPlayer/MediaPlayer.h>
 @interface HMAudioTool : NSObject
 + (void)playAudioWithFilename:(NSString  *)filename;
 + (void)disposeAudioWithFilename:(NSString  *)filename;
@@ -46,6 +46,7 @@ static NSMutableDictionary *_soundIDs;
 @property (strong, nonatomic) UISegmentedControl *choosePlay;
 @property(nonatomic,strong)AVPlayer *player;
 @property(nonatomic,strong)AVPlayerLayer *layer;
+@property(nonatomic,strong)MPMoviePlayerController *localPlayer;
 @end
 @implementation MediaPlayViewController
 - (void)viewDidLoad {
@@ -75,6 +76,40 @@ static NSMutableDictionary *_soundIDs;
     [sound1 addTarget:self action:@selector(playSound1) forControlEvents:UIControlEventTouchUpInside];
     [sound2 addTarget:self action:@selector(playSound2) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubviews:sound1,sound2,nil];
+    UIButton *playLocal = [[UIButton alloc]initWithFrame:CGRectMake(10, YH(sound1)+10, 200, 30)];
+    [playLocal setTitle:@"播放本地视频" forState:UIControlStateNormal];
+    playLocal.backgroundColor = redcolor;
+    [playLocal addTarget:self action:@selector(playLocalVideo) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:playLocal];
+    UIButton *jieping = [[UIButton alloc]initWithFrame:CGRectMake(XW(playLocal)+20, Y(playLocal), 100, 30)];
+    [jieping setTitle:@"截屏本地" forState:UIControlStateNormal];
+    jieping.backgroundColor = redcolor;
+    [jieping addTarget:self action:@selector(jieping) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:jieping];
+}
+-(void)playLocalVideo{
+    
+    NSString *path = @"/Users/tarena/Desktop/开讲大时代——林丹：没有人想永远输给你.mp4";
+    NSURL *fileURL = [NSURL fileURLWithPath:path];
+    self.localPlayer = [[MPMoviePlayerController alloc]initWithContentURL:fileURL];
+    self.localPlayer.view.frame = CGRectMake(0, 0, 320, 200);
+    [self.view addSubview:self.localPlayer.view];
+    [self.localPlayer setControlStyle:MPMovieControlStyleNone];
+    [self.localPlayer play];
+    
+    //监听获取缩略图的通知
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(imageDidFinish:) name:MPMoviePlayerThumbnailImageRequestDidFinishNotification object:nil];
+}
+-(void)jieping{
+     [self.localPlayer requestThumbnailImagesAtTimes:@[@(self.localPlayer.currentPlaybackTime)] timeOption:MPMovieTimeOptionExact];
+}
+-(void)imageDidFinish:(NSNotification *)noti{
+    NSLog(@"%@",noti.userInfo);
+    UIImage *image = [noti.userInfo objectForKey:MPMoviePlayerThumbnailImageKey];
+    UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 300, 320, 200)];
+    iv.image = image;
+    [self.view addSubview:iv];
+    
 }
 -(void)playSound1{
     [HMAudioTool playAudioWithFilename:@"buyao.wav"];

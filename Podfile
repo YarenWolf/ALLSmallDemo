@@ -27,4 +27,7 @@ target 'AllSmallDemo' do
     
     pod 'pop', '~> 1.0' #https://github.com/facebook/pop
     
+    pod 'Realm' #https://realm.io/docs/objc/latest/。 https://github.com/realm/realm-cocoa
+    
+    pod 'XMPPFramework', '~> 3.7.0' #https://github.com/robbiehanson/XMPPFramework
 end

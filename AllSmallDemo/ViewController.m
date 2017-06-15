@@ -53,10 +53,12 @@
   @[@"访问通讯录",@"这是访问系统通讯录的功能。",@"picture",@"AddressBookViewController"],
   @[@"GameKit蓝牙",@"这是GameKit的蓝牙功能。",@"picture",@"GameKitViewController"],
   @[@"蓝牙4.0",@"这是CoreBlueTooth的蓝牙功能。",@"picture",@"BlueToothViewController"],
-  @[@"APP跳转",@"这是跳转到其他APP并传输相应的参数。",@"picture",@"GoAPPViewController"],
+  @[@"APP跳转",@"这是跳转到其他APP并传输相应的参数，以及打电话，发短信，发邮件，跳转浏览器，跳到新浪微博等。",@"picture",@"GoAPPViewController"],
  @[@"二维码",@"这是二维码功能，包括扫描和生成",@"picture",@"QRCodeViewController"],
  @[@"录音",@"这是录音功能的项目",@"picture",@"RecordAudioViewController"],
- @[@"指南针",@"这是指南针项目",@"picture",@"CompassViewController"],                         
+ @[@"指南针",@"这是指南针项目",@"picture",@"CompassViewController"],
+ @[@"周边区域检测",@"这是周边区域检测的功能，可查看是否进入区域，及附近的蓝牙设备",@"picture",@"IBeaconViewController"],
+                         
                       nil];
     NSArray *section2 = [NSArray arrayWithObjects:
   @[@"苹果自带导航",@"这是苹果自带的导航功能",@"picture",@"AppleGuideViewController"],
@@ -65,7 +67,7 @@
   @[@"友盟分享",@"discription",@"picture",@"UIViewController"],nil];
     
     NSArray *section3 = [NSArray arrayWithObjects:
-  @[@"name",@"discription",@"picture",@"UIViewController"],
+  @[@"数据持久化",@"这是数据持久化的几种方法",@"picture",@"DataDiskViewController"],
   @[@"name",@"discription",@"picture",@"UIViewController"],nil];
     
     NSArray *section4 = [NSArray arrayWithObjects:
@@ -75,7 +77,15 @@
   @[@"大文件下载",@"这是网络请求中大文件的下载带有断点续传功能",@"picture",@"DownLoadBigFileViewController"],
   @[@"登陆与钥匙串加密还有cookies",@"这里面包含许多种加密算法和钥匙串记录账号密码以及读取cookies的功能",@"picture",@"EncryptionViewController"],
   @[@"NSSURLSession使用",@"是使用NSURLSession的一些方法",@"picture",@"URLSessionTaskViewController"],
-  @[@"name",@"dsf",@"picture",@"UIViewController"],nil];
+  @[@"Socket通信",@"这是socket通信的样例",@"picture",@"SocketViewController"],
+  @[@"UDP协议通信",@"这是UDP的socket通信的样例",@"picture",@"UDPSocketViewController"],
+  @[@"TCP/IP和UDP网络传输协议",@"这是TCP/IP和UDP的通信协议的使用。",@"picture",@"TCP_UDPViewController"],
+  @[@"WebView代理",@"这是WebView代理访问的一些方法",@"picture",@"WebDelegateViewController"],
+  @[@"XMPP通信",@"这是XMPP通信的样例,引入的时候需要加入libresorve库",@"picture",@"XMPPViewController"],
+                         
+                         nil];
+    
+    
     NSArray *section6 = [NSArray arrayWithObjects:
   @[@"表格编辑模式",@"这是表格的编辑模式包括增删和移动",@"picture",@"EditTableViewController"],
   @[@"搜索控制器",@"这是搜索代理控制器，可以处理搜索结果",@"picture",@"SearchResaltViewController"],
@@ -87,7 +97,7 @@
   @[@"可移动的item",@"这是类似于collectionView的编辑模式，可修改、移动和删除item",@"picture",@"MoveItemViewController"],
   @[@"按钮列表弹出效果",@"这里有很多有趣的弹出菜单效果",@"picture",@"MenusViewController"],
   @[@"导航栏下拉列表",@"导航栏顶部区域筛选的下拉列表效果",@"picture",@"DownTableViewController"],
-  @[@"屏幕截图",@"这是屏幕截图效果，截图之后保存到桌面",@"picture",@"ScreenshotViewController"],
+  @[@"屏幕截图",@"这是屏幕截图效果，截图之后保存到相册和桌面",@"picture",@"ScreenshotViewController"],
   @[@"区域定位计算",@"这里包含定位，判断是否离开区域，计算行驶距离，速度，平均速度等",@"picture",@"GuidanceRegionViewController"],
   @[@"人生轨迹",@"这是轨迹沿线图",@"picture",@"JourneyViewController"],
   @[@"手势解锁",@"这是绘制解锁的功能",@"picture",@"UnlockViewController"],
@@ -96,9 +106,9 @@
   @[@"头视图渐变内容联动",@"这是头视图和内容视图联动，实现了头部视图文字颜色渐变",@"picture",@"GradientViewController"],
   @[@"涂鸦画板",@"这是绘画面板，可以在上面作图",@"picture",@"PainViewController"],
   @[@"图书展览馆",@"这是书记展示界面",@"picture",@"BooksViewController"],
-                         
-                         
-                         nil];
+  @[@"左侧边控制器",@"这是类似于QQ的左边控制器",@"picture",@"LeftViewController"],
+  @[@"分页面滚动",@"这是分页面滚动的视图",@"picture",@"ScrollPageViewController"],
+  @[@"自定义导航栏",@"这是自定义的导航显示风格",@"picture",@"CustomNavViewController"],                         nil];
     NSArray *section7 = [NSArray arrayWithObjects:
   @[@"圆形出来菜单",@"这是很好用的圆形出来的按钮，可以控制间距、大小等。",@"picture",@"RadialMenuViewController"],
   @[@"导航栏下拉菜单",@"从导航栏上面往下出现的菜单按钮",@"picture",@"NaviMenuViewController"],
@@ -116,7 +126,7 @@
   @[@"点击出现放大菜单",@"这是点击出现放大的按钮效果",@"picture",@"AnimatedMenuViewController"],
   @[@"圆形旋转出现的菜单",@"这是点击圆形旋转之后出现并在选择之后旋转收回的按钮效果",@"picture",@"TurnRoundMenuViewController"],
   @[@"核心动画",@"这是基本动画和关键帧动画",@"picture",@"CoreAnimationViewController"],
-                         
+  @[@"照片动画浏览器",@"这是类似于空间画廊的照片浏览器",@"picture",@"PhotoSeeViewController"],                         
                          nil];
     NSArray *section8 = [NSArray arrayWithObjects:
   @[@"音视频在线播放及音效播放",@"这是音视频在线播放功能还有音效播放的功能",@"picture",@"MediaPlayViewController"],
@@ -126,13 +136,16 @@
   @[@"name",@"discription",@"picture",@"UIViewController"],nil];
     NSArray *section10= [NSArray arrayWithObjects:
   @[@"正则表达式",@"这是正则表达式的一些使用方法,使用时需要包含libicucore库并使Regexkitlit为-fno-objc-arc",@"picture",@"RegexViewController"],
-  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
+  @[@"本地文件扫描播放",@"这是扫描本地音频文件并实现播放的功能",@"picture",@"GetLocalsPlayViewController"],
+  @[@"打老鼠游戏",@"这是打老鼠的游戏",@"picture",@"HitMouseViewController"],
+  @[@"本地文件夹扫描",@"这是扫描本地文件目录的功能",@"picture",@"FileScanViewController"],
+nil];
     self.dataArray = [NSMutableArray arrayWithObjects:
   @{@"name":@"系统功能",@"array":section1},@{@"name":@"第三方服务",@"array":section2},
   @{@"name":@"数据库处理",@"array":section3},@{@"name":@"数据解析",@"array":section4},
   @{@"name":@"网络传输",@"array":section5},@{@"name":@"UI界面设计",@"array":section6},
   @{@"name":@"特效动画",@"array":section7},@{@"name":@"多媒体",@"array":section8},
-  @{@"name":@"aaa",@"array":section9},@{@"name":@"其它",@"array":section10}, nil];
+  @{@"name":@"高新技术",@"array":section9},@{@"name":@"其它",@"array":section10}, nil];
     self.mTableView = [[ThirdListTableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width,self.view.frame.size.height)];
     self.mTableView.delegate = self;
     [self.view addSubview:self.mTableView];

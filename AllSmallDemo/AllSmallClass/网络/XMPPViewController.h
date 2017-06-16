@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XMPPFramework.h"
 #import "TRXMPPManager.h"
 @interface XMPPViewController : UIViewController<TRXMPPManagerDelegate,UITableViewDataSource,UITableViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 

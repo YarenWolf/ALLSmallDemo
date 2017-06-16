@@ -29,5 +29,10 @@ target 'AllSmallDemo' do
     
     pod 'Realm' #https://realm.io/docs/objc/latest/。 https://github.com/realm/realm-cocoa
     
-    pod 'XMPPFramework', '~> 3.7.0' #https://github.com/robbiehanson/XMPPFramework
+    pod 'XMPPFramework', '~> 3.7.0' #https://github.com/robbiehanson/XMPPFramework #XMPPRoomLightMessageCoreDataStorageObject.h里删除XMPPFramework/    #XMPPRoomLight.m里删除XMPPFramework/
+    pod 'OpenShare'  #http://cocoadocs.org/docsets/OpenShare/0.0.1/
+    
+    pod 'SDAutoLayout', '~> 2.1.3' #https://github.com/gsdios/SDAutoLayout  cell高度自适应
+    pod 'FMDB'
+#    pod 'XHRadarView' #https://github.com/heartfly/XHRadarView 雷达扫描
 end

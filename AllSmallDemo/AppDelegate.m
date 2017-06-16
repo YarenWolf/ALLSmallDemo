@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+#import "OpenShareHeader.h"
 @interface AppDelegate ()
 
 @end
@@ -31,6 +32,12 @@
     NSDictionary *userInfo = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
     
     NSLog(@"%@\n\n\n%@",launchOptions,userInfo);
+    //OpenShare第一步：注册key
+    [OpenShare connectQQWithAppId:@"1103194207"];
+    [OpenShare connectWeiboWithAppKey:@"402180334"];
+    [OpenShare connectWeixinWithAppId:@"wxd930ea5d5a258f4f"];
+    [OpenShare connectRenrenWithAppId:@"228525" AndAppKey:@"1dd8cba4215d4d4ab96a49d3058c1d7f"];
+    [OpenShare connectAlipay];//支付宝参数都是服务器端生成的，这里不需要key.
     return YES;
 }
 /**
@@ -98,6 +105,11 @@
 #pragma mark 从其他APP跳转过来的时候传过来的信息
 - (BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     NSLog(@"%@\n\n%@\n\n%@",url.absoluteString,sourceApplication,annotation);
+    //第二步：添加回调
+    if ([OpenShare handleOpenURL:url]) {
+        return YES;
+    }
+    //这里可以写上其他OpenShare不支持的客户端的回调，比如支付宝等。
     return YES;
 }
 - (void)applicationWillResignActive:(UIApplication *)application {

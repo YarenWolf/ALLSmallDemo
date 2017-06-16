@@ -1186,7 +1186,7 @@ static dispatch_once_t utility;
     //创建文件管理器对象
     NSFileManager *fm = [NSFileManager defaultManager];
     NSString* realFileName = [doc_path stringByAppendingPathComponent:fileName];
-    NSString* new_folder = [doc_path stringByAppendingPathComponent:@"test"];
+    NSString* new_folder = [doc_path stringByAppendingPathComponent:@"newFolder"];
     //创建目录
     [fm createDirectoryAtPath:new_folder withIntermediateDirectories:YES attributes:nil error:nil];
     [[NSFileManager defaultManager] createDirectoryAtPath:doc_path withIntermediateDirectories:YES attributes:nil error:nil];

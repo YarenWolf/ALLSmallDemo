@@ -13,10 +13,6 @@
 @property (nonatomic, weak)XMPPViewController *delegate;
 @end
 @implementation TRRecordButton
--(void)awakeFromNib{
-    [super awakeFromNib];
-    [self initRecord];
-}
 - (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
@@ -141,8 +137,7 @@
 @property (nonatomic, strong)AVAudioPlayer *player;
 @end
 @implementation XMPPViewController
-- (IBAction)clicked:(id)sender {
-    
+- (void)clicked:(id)sender {
     UIButton *btn = sender;
     if (btn.tag==1) {//发送图片
         UIImagePickerController *ipc = [[UIImagePickerController alloc]init];

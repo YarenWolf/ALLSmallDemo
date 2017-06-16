@@ -54,11 +54,11 @@
   @[@"GameKit蓝牙",@"这是GameKit的蓝牙功能。",@"picture",@"GameKitViewController"],
   @[@"蓝牙4.0",@"这是CoreBlueTooth的蓝牙功能。",@"picture",@"BlueToothViewController"],
   @[@"APP跳转",@"这是跳转到其他APP并传输相应的参数，以及打电话，发短信，发邮件，跳转浏览器，跳到新浪微博等。",@"picture",@"GoAPPViewController"],
- @[@"二维码",@"这是二维码功能，包括扫描和生成",@"picture",@"QRCodeViewController"],
+ @[@"二维码",@"这是二维码功能，包括扫描、长按识别和生成",@"picture",@"QRCodeViewController"],
  @[@"录音",@"这是录音功能的项目",@"picture",@"RecordAudioViewController"],
  @[@"指南针",@"这是指南针项目",@"picture",@"CompassViewController"],
  @[@"周边区域检测",@"这是周边区域检测的功能，可查看是否进入区域，及附近的蓝牙设备",@"picture",@"IBeaconViewController"],
-                         
+ @[@"Wi-Fi或蓝牙在近距离建立连接",@"在近距离设备间建立互动，交换数据和其他资源的很好的简单工具",@"picture",@"MultiPeerViewController"],                         
                       nil];
     NSArray *section2 = [NSArray arrayWithObjects:
   @[@"苹果自带导航",@"这是苹果自带的导航功能",@"picture",@"AppleGuideViewController"],
@@ -68,8 +68,10 @@
     
     NSArray *section3 = [NSArray arrayWithObjects:
   @[@"数据持久化",@"这是数据持久化的几种方法",@"picture",@"DataDiskViewController"],
-  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
-    
+  @[@"SQL数据库基本使用",@"这是对SQL数据库的基本使用方法，需要引入libsqlite3.tbd",@"picture",@"SQLViewController"],
+  @[@"FMDB数据库管理",@"这是利用FMDB进行数据库管理的几种方法，需要引入libsqlite3.tbd",@"picture",@"FMDBViewController"],
+                         
+                         nil];
     NSArray *section4 = [NSArray arrayWithObjects:
   @[@"XML解析",@"这是XML数据格式解析",@"picture",@"XMLParseViewController"],
   @[@"压缩与解压缩",@"这是压缩与解压缩的功能,需要引入libz.tbd库",@"picture",@"UnAchiveViewController"],nil];
@@ -81,8 +83,8 @@
   @[@"UDP协议通信",@"这是UDP的socket通信的样例",@"picture",@"UDPSocketViewController"],
   @[@"TCP/IP和UDP网络传输协议",@"这是TCP/IP和UDP的通信协议的使用。",@"picture",@"TCP_UDPViewController"],
   @[@"WebView代理",@"这是WebView代理访问的一些方法",@"picture",@"WebDelegateViewController"],
-  @[@"XMPP通信",@"这是XMPP通信的样例,引入的时候需要加入libresorve库",@"picture",@"XMPPViewController"],
-                         
+@[@"XMPP通信 要加入libresorve库 用Pod时修改库本身",@"XMPPRoomLightMessageCoreDataStorageObject.h里去掉\"XMPPFramework/  在XMPPRoomLight.m里修改\"XMPPFramework/XMPPMessage+XEP0045.h\"",@"picture",@"XMPPViewController"],
+  @[@"OpenShare分享",@"这是OpenShare分享到各大平台的功能，需要在AppDelegate里面做点设置openURL和launchOpetions里",@"picture",@"OpenShareViewController"],
                          nil];
     
     
@@ -108,7 +110,10 @@
   @[@"图书展览馆",@"这是书记展示界面",@"picture",@"BooksViewController"],
   @[@"左侧边控制器",@"这是类似于QQ的左边控制器",@"picture",@"LeftViewController"],
   @[@"分页面滚动",@"这是分页面滚动的视图",@"picture",@"ScrollPageViewController"],
-  @[@"自定义导航栏",@"这是自定义的导航显示风格",@"picture",@"CustomNavViewController"],                         nil];
+  @[@"自定义导航栏",@"这是自定义的导航显示风格",@"picture",@"CustomNavViewController"],
+  @[@"单元格高度自适应",@"这是单元格高度自适应的列表",@"picture",@"CellAutoHeightViewController"],
+                         
+                         nil];
     NSArray *section7 = [NSArray arrayWithObjects:
   @[@"圆形出来菜单",@"这是很好用的圆形出来的按钮，可以控制间距、大小等。",@"picture",@"RadialMenuViewController"],
   @[@"导航栏下拉菜单",@"从导航栏上面往下出现的菜单按钮",@"picture",@"NaviMenuViewController"],
@@ -127,18 +132,24 @@
   @[@"圆形旋转出现的菜单",@"这是点击圆形旋转之后出现并在选择之后旋转收回的按钮效果",@"picture",@"TurnRoundMenuViewController"],
   @[@"核心动画",@"这是基本动画和关键帧动画",@"picture",@"CoreAnimationViewController"],
   @[@"照片动画浏览器",@"这是类似于空间画廊的照片浏览器",@"picture",@"PhotoSeeViewController"],                         
+  @[@"根据布局文件改变布局",@"这是读取本地布局文件来改变布局的功能",@"picture",@"ChangeLayoutViewController"],
+                         
                          nil];
     NSArray *section8 = [NSArray arrayWithObjects:
   @[@"音视频在线播放及音效播放",@"这是音视频在线播放功能还有音效播放的功能",@"picture",@"MediaPlayViewController"],
   @[@"name",@"discription",@"picture",@"UIViewController"],nil];
     NSArray *section9 = [NSArray arrayWithObjects:
-  @[@"name",@"discription",@"picture",@"UIViewController"],
+  @[@"TouchID验证",@"这是验证手机指纹的，点击开始",@"picture",@"TouchIDViewController"],
   @[@"name",@"discription",@"picture",@"UIViewController"],nil];
     NSArray *section10= [NSArray arrayWithObjects:
   @[@"正则表达式",@"这是正则表达式的一些使用方法,使用时需要包含libicucore库并使Regexkitlit为-fno-objc-arc",@"picture",@"RegexViewController"],
   @[@"本地文件扫描播放",@"这是扫描本地音频文件并实现播放的功能",@"picture",@"GetLocalsPlayViewController"],
   @[@"打老鼠游戏",@"这是打老鼠的游戏",@"picture",@"HitMouseViewController"],
   @[@"本地文件夹扫描",@"这是扫描本地文件目录的功能",@"picture",@"FileScanViewController"],
+  @[@"数独游戏",@"这是解数独的游戏",@"picture",@"SudokuViewController"],
+  @[@"Runtime",@"这是Runtime项目，使用MsgSend方法需要设置BuidSettings／Enable Strict Checking of objc_msgSendCalls : NO",@"picture",@"RuntimeViewController"],
+  @[@"翻页阅读",@"这是书籍阅读项目",@"picture",@"PageReadViewController"],
+  @[@"雷达扫描",@"这是雷达扫描附近的效果",@"lata",@"RadaViewController"],
 nil];
     self.dataArray = [NSMutableArray arrayWithObjects:
   @{@"name":@"系统功能",@"array":section1},@{@"name":@"第三方服务",@"array":section2},
@@ -188,7 +199,8 @@ nil];
     return cell;
 }
 - (UIView *)mTableView:(ThirdListTableView *)tableView openCellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSData *localData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Untitled" ofType:@"gif"]];
+    NSString *gifName = self.dataArray[indexPath.section][@"array"][indexPath.row][2];
+    NSData *localData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:gifName ofType:@"gif"]];
     FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
     imageView.animatedImage = [FLAnimatedImage animatedImageWithGIFData:localData];;
     imageView.frame = CGRectMake(0, 0, 200, 300);

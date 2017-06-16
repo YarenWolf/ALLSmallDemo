@@ -6,16 +6,75 @@
 //  Copyright © 2017年 Super. All rights reserved.
 #import "QRCodeViewController.h"
 #import <AVFoundation/AVFoundation.h>
-@interface QRCodeViewController ()<AVCaptureMetadataOutputObjectsDelegate>
+#import "CSYScanViewController.h"
+@interface QRCodeViewController ()<AVCaptureMetadataOutputObjectsDelegate,  UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIAlertViewDelegate,UIGestureRecognizerDelegate>
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
 @property (strong, nonatomic) UIImageView *qrCode;
+@property (strong, nonatomic) UILongPressGestureRecognizer *longGesture;
+@property (strong, nonatomic) UITextField *codeInputTxt;
 @end
 @implementation QRCodeViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self scanQRCode];
+    self.codeInputTxt = [[UITextField alloc]initWithFrame:CGRectMake(10, 100, 300, 30)];
+    self.codeInputTxt.placeholder = @"在这里输入你要生成的内容";
+    UIButton *scan = [[UIButton alloc]initWithFrame:CGRectMake(10, 150, 100, 30)];
+    [scan setTitle:@"扫描二维码" forState:UIControlStateNormal];
+    UIButton *output = [[UIButton alloc]initWithFrame:CGRectMake(120, 150, 100, 30)];
+    [output setTitle:@"生成二维码" forState:UIControlStateNormal];
+    UIButton *longTap = [[UIButton alloc]initWithFrame:CGRectMake(250, 150, 100, 30)];
+    [longTap setTitle:@"长按识别" forState:UIControlStateNormal];
+    scan.backgroundColor = output.backgroundColor = longTap.backgroundColor = [UIColor redColor];
+    [scan addTarget:self action:@selector(scanQRcode) forControlEvents:UIControlEventTouchUpInside];
+    [output addTarget:self action:@selector(createCode:) forControlEvents:UIControlEventTouchUpInside];
+    [longTap addTarget:self action:@selector(ScreenShot) forControlEvents:UIControlEventTouchUpInside];
+    self.qrCode = [[UIImageView alloc]initWithFrame:CGRectMake(10, 200, 300, 300)];
+    self.qrCode.image = [UIImage imageNamed:@"QR"];
+    [self.view addSubview:self.codeInputTxt];
+    [self.view addSubview:scan];
+    [self.view addSubview:output];
+    [self.view addSubview:longTap];
+    [self.view addSubview:self.qrCode];
+    _longGesture = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longGesture:)];
+    _longGesture.numberOfTouchesRequired = 1;
+    _longGesture.numberOfTapsRequired = 1;
+    _longGesture.minimumPressDuration = 1;
+    self.qrCode.userInteractionEnabled = YES;
+    [self.qrCode addGestureRecognizer:_longGesture];
+//    [self scanQRCode];
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+-(void)scanQRcode{
+    [self.navigationController pushViewController:[[CSYScanViewController alloc]init] animated:YES];
+}
+
+
+-(void)longGesture:(UILongPressGestureRecognizer *)longGesture{
+    if (longGesture.state == UIGestureRecognizerStateBegan) {
+        //截屏
+        [self ScreenShot];
+    }
+}
+-(void)ScreenShot{
+    UIGraphicsBeginImageContextWithOptions(self.view.frame.size, NO, 0);     //设置截屏大小
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage * viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    UIImage * img = [[UIImage alloc]initWithData:UIImagePNGRepresentation(viewImage)];
+    CIDetector *detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:nil options:@{ CIDetectorAccuracy:CIDetectorAccuracyHigh }];
+    NSArray *features = [detector featuresInImage:[CIImage imageWithCGImage:img.CGImage]];
+    NSLog(@"%@",features);
+    CIQRCodeFeature *feature = [features firstObject];
+    if (feature) {
+        NSLog(@"%@",feature.messageString);
+    } else {
+        NSLog(@"没有二维码");
+    }
+}
+
 -(void)scanQRCode{
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:device error:nil];
@@ -51,20 +110,18 @@
     }
 }
 #pragma mark 生成二维码
-- (void)getQRCode{
-    self.qrCode = [[UIImageView alloc]initWithFrame:CGRectMake(20, TopHeight+20, 300, 300)];
-    [self.view addSubview:self.qrCode];
-    NSString *str = @"二维码里面存放的信息内容";
-    // 1.创建过滤器
-    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
-//    CIFilter *filter = [CIFilter filterWithName:@"CICode128BarcodeGenerator"];
-    // 2.获取数据  设置给filter
-    NSData * data = [str dataUsingEncoding:NSUTF8StringEncoding];
+- (void)createCode:(id)sender {
+    NSString * QRcodeStr = _codeInputTxt.text;
+    if ([QRcodeStr isEqualToString:@""]) return;
+    NSData * data = [QRcodeStr dataUsingEncoding:NSUTF8StringEncoding];
+    CIFilter * filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
     [filter setValue:data forKey:@"inputMessage"];
-    // 3.获取二维码
-    CIImage *cimage = filter.outputImage;
-    self.qrCode.image = [UIImage imageWithCIImage:cimage];
+    CIImage * outputImage = filter.outputImage;
+    CGFloat scale = CGRectGetWidth(self.qrCode.bounds);
+    CGAffineTransform transform = CGAffineTransformMakeScale(scale, scale);
+    CIImage * transformImg = [outputImage imageByApplyingTransform:transform];
+    _qrCode.image = [UIImage imageWithCIImage:transformImg];
+    _codeInputTxt.text = @"";
 }
-
 
 @end

@@ -87,4 +87,15 @@
     [sock readDataWithTimeout:-1 tag:0];
     
 }
+
+#pragma mark send Socket
+-(void)sendSocket:(UIButton*)sender{
+    self.clientSocket = [[AsyncSocket alloc]initWithDelegate:self];
+    [self.clientSocket connectToHost:@"对方的ip地址" onPort:8000 error:nil];
+    NSData *data = [@"你好啊！" dataUsingEncoding:NSUTF8StringEncoding];
+    [self.clientSocket writeData:data withTimeout:-1 tag:0];
+}
+-(void)onSocket:(AsyncSocket *)sock didWriteDataWithTag:(long)tag{
+    NSLog(@"发送完成！");
+}
 @end

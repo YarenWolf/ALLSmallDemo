@@ -42,8 +42,6 @@
 ///
 /// @return 屏幕截图图像
 + (UIImage *)scott_screenShot;
-
-
 /**
  *  生成一张高斯模糊的图片
  *
@@ -53,5 +51,5 @@
  *  @return 高斯模糊图片
  */
 + (UIImage *)scott_blurImage:(UIImage *)image blur:(CGFloat)blur;
-
++(UIImage *)imageWithColor:(UIColor *)color inRect:(CGRect)rect;
 @end

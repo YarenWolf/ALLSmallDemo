@@ -67,7 +67,7 @@
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
     }else{
         //增加动作
-        [self.allCitys addObject:@"Test"];
+        [self.allCitys addObject:@"测试数据"];
         NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:self.allCitys.count-1 inSection:0];
         [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
     }

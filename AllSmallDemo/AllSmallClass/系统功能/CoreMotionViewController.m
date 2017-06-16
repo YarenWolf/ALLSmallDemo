@@ -70,6 +70,10 @@
         }
     }];
 }
-
+-(void)dealloc{
+    [self.mgr stopAccelerometerUpdates];
+    [self.mgr stopMagnetometerUpdates];
+    self.mgr = nil;
+}
 @end
 

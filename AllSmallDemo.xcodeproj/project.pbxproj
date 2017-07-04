@@ -158,6 +158,25 @@
 		BF71EE1F1EF3D93F00F3588D /* buyao.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF71EE1D1EF3D93F00F3588D /* buyao.wav */; };
 		BF71EE211EF3D95B00F3588D /* lata.gif in Resources */ = {isa = PBXBuildFile; fileRef = BF71EE201EF3D95B00F3588D /* lata.gif */; };
 		BF71EE231EF3D9C000F3588D /* picture.gif in Resources */ = {isa = PBXBuildFile; fileRef = BF71EE221EF3D9C000F3588D /* picture.gif */; };
+		BF776EA41F0B358400ABCC04 /* AudioRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF776EA31F0B358400ABCC04 /* AudioRunViewController.m */; };
+		BF776EAE1F0B35EE00ABCC04 /* perRun1.png in Resources */ = {isa = PBXBuildFile; fileRef = BF776EA61F0B35EE00ABCC04 /* perRun1.png */; };
+		BF776EAF1F0B35EE00ABCC04 /* perRun2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF776EA71F0B35EE00ABCC04 /* perRun2.png */; };
+		BF776EB01F0B35EE00ABCC04 /* perRun3.png in Resources */ = {isa = PBXBuildFile; fileRef = BF776EA81F0B35EE00ABCC04 /* perRun3.png */; };
+		BF776EB11F0B35EE00ABCC04 /* perRun4.png in Resources */ = {isa = PBXBuildFile; fileRef = BF776EA91F0B35EE00ABCC04 /* perRun4.png */; };
+		BF776EB21F0B35EE00ABCC04 /* perRun5.png in Resources */ = {isa = PBXBuildFile; fileRef = BF776EAA1F0B35EE00ABCC04 /* perRun5.png */; };
+		BF776EB31F0B35EE00ABCC04 /* perRun6.png in Resources */ = {isa = PBXBuildFile; fileRef = BF776EAB1F0B35EE00ABCC04 /* perRun6.png */; };
+		BF776EB41F0B35EE00ABCC04 /* perRun7.png in Resources */ = {isa = PBXBuildFile; fileRef = BF776EAC1F0B35EE00ABCC04 /* perRun7.png */; };
+		BF776EB51F0B35EE00ABCC04 /* perRun8.png in Resources */ = {isa = PBXBuildFile; fileRef = BF776EAD1F0B35EE00ABCC04 /* perRun8.png */; };
+		BF776EB81F0B382C00ABCC04 /* VideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF776EB71F0B382C00ABCC04 /* VideoRecordViewController.m */; };
+		BF776EBB1F0B3A9800ABCC04 /* LightCamoraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF776EBA1F0B3A9800ABCC04 /* LightCamoraViewController.m */; };
+		BF776EBE1F0B3DC600ABCC04 /* VideoRecordPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF776EBD1F0B3DC600ABCC04 /* VideoRecordPlayViewController.m */; };
+		BF776EC11F0B3F8100ABCC04 /* RealWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF776EC01F0B3F8100ABCC04 /* RealWorldViewController.m */; };
+		BF776EC61F0B41C100ABCC04 /* GameKitBlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF776EC51F0B41C100ABCC04 /* GameKitBlueToothViewController.m */; };
+		BF776EC91F0B439C00ABCC04 /* AppleShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF776EC81F0B439C00ABCC04 /* AppleShareViewController.m */; };
+		BF776ECC1F0B445C00ABCC04 /* AudioRecordedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF776ECB1F0B445C00ABCC04 /* AudioRecordedViewController.m */; };
+		BF776ECF1F0B462F00ABCC04 /* XSMiOSAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = BF776ECE1F0B462F00ABCC04 /* XSMiOSAuthorization.m */; };
+		BF776ED11F0B468F00ABCC04 /* Language.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF776ED01F0B468F00ABCC04 /* Language.bundle */; };
+		BF776ED61F0B4A1300ABCC04 /* BigBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF776ED51F0B4A1300ABCC04 /* BigBirdViewController.swift */; };
 		BF946C591EEF996F001E8AEF /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946C581EEF996F001E8AEF /* AlertViewController.m */; };
 		BF946C681EEF99DC001E8AEF /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946C5C1EEF99DC001E8AEF /* LewPopupBackgroundView.m */; };
 		BF946C691EEF99DC001E8AEF /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946C5E1EEF99DC001E8AEF /* LewPopupViewAnimationDrop.m */; };
@@ -558,6 +577,34 @@
 		BF71EE1D1EF3D93F00F3588D /* buyao.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buyao.wav; sourceTree = "<group>"; };
 		BF71EE201EF3D95B00F3588D /* lata.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lata.gif; sourceTree = "<group>"; };
 		BF71EE221EF3D9C000F3588D /* picture.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = picture.gif; sourceTree = "<group>"; };
+		BF776EA21F0B358400ABCC04 /* AudioRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRunViewController.h; sourceTree = "<group>"; };
+		BF776EA31F0B358400ABCC04 /* AudioRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRunViewController.m; sourceTree = "<group>"; };
+		BF776EA61F0B35EE00ABCC04 /* perRun1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perRun1.png; sourceTree = "<group>"; };
+		BF776EA71F0B35EE00ABCC04 /* perRun2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perRun2.png; sourceTree = "<group>"; };
+		BF776EA81F0B35EE00ABCC04 /* perRun3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perRun3.png; sourceTree = "<group>"; };
+		BF776EA91F0B35EE00ABCC04 /* perRun4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perRun4.png; sourceTree = "<group>"; };
+		BF776EAA1F0B35EE00ABCC04 /* perRun5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perRun5.png; sourceTree = "<group>"; };
+		BF776EAB1F0B35EE00ABCC04 /* perRun6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perRun6.png; sourceTree = "<group>"; };
+		BF776EAC1F0B35EE00ABCC04 /* perRun7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perRun7.png; sourceTree = "<group>"; };
+		BF776EAD1F0B35EE00ABCC04 /* perRun8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perRun8.png; sourceTree = "<group>"; };
+		BF776EB61F0B382C00ABCC04 /* VideoRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoRecordViewController.h; sourceTree = "<group>"; };
+		BF776EB71F0B382C00ABCC04 /* VideoRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoRecordViewController.m; sourceTree = "<group>"; };
+		BF776EB91F0B3A9800ABCC04 /* LightCamoraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightCamoraViewController.h; sourceTree = "<group>"; };
+		BF776EBA1F0B3A9800ABCC04 /* LightCamoraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightCamoraViewController.m; sourceTree = "<group>"; };
+		BF776EBC1F0B3DC600ABCC04 /* VideoRecordPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoRecordPlayViewController.h; sourceTree = "<group>"; };
+		BF776EBD1F0B3DC600ABCC04 /* VideoRecordPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoRecordPlayViewController.m; sourceTree = "<group>"; };
+		BF776EBF1F0B3F8100ABCC04 /* RealWorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealWorldViewController.h; sourceTree = "<group>"; };
+		BF776EC01F0B3F8100ABCC04 /* RealWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealWorldViewController.m; sourceTree = "<group>"; };
+		BF776EC41F0B41C100ABCC04 /* GameKitBlueToothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitBlueToothViewController.h; sourceTree = "<group>"; };
+		BF776EC51F0B41C100ABCC04 /* GameKitBlueToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitBlueToothViewController.m; sourceTree = "<group>"; };
+		BF776EC71F0B439C00ABCC04 /* AppleShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleShareViewController.h; sourceTree = "<group>"; };
+		BF776EC81F0B439C00ABCC04 /* AppleShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleShareViewController.m; sourceTree = "<group>"; };
+		BF776ECA1F0B445C00ABCC04 /* AudioRecordedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecordedViewController.h; sourceTree = "<group>"; };
+		BF776ECB1F0B445C00ABCC04 /* AudioRecordedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecordedViewController.m; sourceTree = "<group>"; };
+		BF776ECD1F0B462F00ABCC04 /* XSMiOSAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSMiOSAuthorization.h; sourceTree = "<group>"; };
+		BF776ECE1F0B462F00ABCC04 /* XSMiOSAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSMiOSAuthorization.m; sourceTree = "<group>"; };
+		BF776ED01F0B468F00ABCC04 /* Language.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Language.bundle; sourceTree = "<group>"; };
+		BF776ED51F0B4A1300ABCC04 /* BigBirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigBirdViewController.swift; sourceTree = "<group>"; };
 		BF8E21E51EEE4160006B2C0A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BF946C571EEF996F001E8AEF /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
 		BF946C581EEF996F001E8AEF /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
@@ -937,6 +984,7 @@
 		BF29A7CB1EF3839A00DD726A /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				BF776EA51F0B35EE00ABCC04 /* player */,
 				BF71EE221EF3D9C000F3588D /* picture.gif */,
 				BF71EE201EF3D95B00F3588D /* lata.gif */,
 				BF71EE1C1EF3D93F00F3588D /* a.wav */,
@@ -984,6 +1032,14 @@
 				BF71EE131EF3D07100F3588D /* SQLViewController.m */,
 				BF71EE171EF3D51000F3588D /* FMDBViewController.h */,
 				BF71EE181EF3D51000F3588D /* FMDBViewController.m */,
+				BF776ECA1F0B445C00ABCC04 /* AudioRecordedViewController.h */,
+				BF776ECB1F0B445C00ABCC04 /* AudioRecordedViewController.m */,
+				BF776EB61F0B382C00ABCC04 /* VideoRecordViewController.h */,
+				BF776EB71F0B382C00ABCC04 /* VideoRecordViewController.m */,
+				BF776EBC1F0B3DC600ABCC04 /* VideoRecordPlayViewController.h */,
+				BF776EBD1F0B3DC600ABCC04 /* VideoRecordPlayViewController.m */,
+				BF776EB91F0B3A9800ABCC04 /* LightCamoraViewController.h */,
+				BF776EBA1F0B3A9800ABCC04 /* LightCamoraViewController.m */,
 			);
 			path = "媒体播放";
 			sourceTree = "<group>";
@@ -1018,6 +1074,10 @@
 				BF29A7FA1EF3C69900DD726A /* PageReadViewController.m */,
 				BF29A8081EF3C87000DD726A /* RadaViewController.h */,
 				BF29A8091EF3C87000DD726A /* RadaViewController.m */,
+				BF776EA21F0B358400ABCC04 /* AudioRunViewController.h */,
+				BF776EA31F0B358400ABCC04 /* AudioRunViewController.m */,
+				BF776EBF1F0B3F8100ABCC04 /* RealWorldViewController.h */,
+				BF776EC01F0B3F8100ABCC04 /* RealWorldViewController.m */,
 			);
 			path = "其它";
 			sourceTree = "<group>";
@@ -1105,6 +1165,7 @@
 				BF533D061EF2C60900D874EC /* PhotoSeeViewController.m */,
 				BF29A7DB1EF3AA5E00DD726A /* ChangeLayoutViewController.h */,
 				BF29A7DC1EF3AA5E00DD726A /* ChangeLayoutViewController.m */,
+				BF776ED51F0B4A1300ABCC04 /* BigBirdViewController.swift */,
 			);
 			path = "特效动画";
 			sourceTree = "<group>";
@@ -1140,6 +1201,9 @@
 				BF946C8F1EEFDC42001E8AEF /* Images */,
 				BFF0BD901EEE62240033159D /* utility */,
 				BF6A07611ED826EF00AD1E1F /* Main.storyboard */,
+				BF776ECD1F0B462F00ABCC04 /* XSMiOSAuthorization.h */,
+				BF776ED01F0B468F00ABCC04 /* Language.bundle */,
+				BF776ECE1F0B462F00ABCC04 /* XSMiOSAuthorization.m */,
 				BF29A7CB1EF3839A00DD726A /* resource */,
 				BF6A07641ED826EF00AD1E1F /* Assets.xcassets */,
 				BF6A07661ED826EF00AD1E1F /* LaunchScreen.storyboard */,
@@ -1250,8 +1314,27 @@
 			isa = PBXGroup;
 			children = (
 				BF71EE101EF3CD7F00F3588D /* TouchIDViewController.swift */,
+				BF776EC41F0B41C100ABCC04 /* GameKitBlueToothViewController.h */,
+				BF776EC51F0B41C100ABCC04 /* GameKitBlueToothViewController.m */,
+				BF776EC71F0B439C00ABCC04 /* AppleShareViewController.h */,
+				BF776EC81F0B439C00ABCC04 /* AppleShareViewController.m */,
 			);
 			path = "高新技术";
+			sourceTree = "<group>";
+		};
+		BF776EA51F0B35EE00ABCC04 /* player */ = {
+			isa = PBXGroup;
+			children = (
+				BF776EA61F0B35EE00ABCC04 /* perRun1.png */,
+				BF776EA71F0B35EE00ABCC04 /* perRun2.png */,
+				BF776EA81F0B35EE00ABCC04 /* perRun3.png */,
+				BF776EA91F0B35EE00ABCC04 /* perRun4.png */,
+				BF776EAA1F0B35EE00ABCC04 /* perRun5.png */,
+				BF776EAB1F0B35EE00ABCC04 /* perRun6.png */,
+				BF776EAC1F0B35EE00ABCC04 /* perRun7.png */,
+				BF776EAD1F0B35EE00ABCC04 /* perRun8.png */,
+			);
+			path = player;
 			sourceTree = "<group>";
 		};
 		BF8E21E11EEE4072006B2C0A /* AllSmallClass */ = {
@@ -1677,9 +1760,11 @@
 				BF946CB01EEFDC42001E8AEF /* 1_05.png in Resources */,
 				BF946CC01EEFDC42001E8AEF /* run3.png in Resources */,
 				BF946CDF1EEFE777001E8AEF /* app_item_plus.png in Resources */,
+				BF776EAE1F0B35EE00ABCC04 /* perRun1.png in Resources */,
 				BF946CC51EEFDC42001E8AEF /* run8.png in Resources */,
 				BF29A7D11EF383AB00DD726A /* Default@2x.png in Resources */,
 				BF29A7EB1EF3AA7600DD726A /* 9.jpg in Resources */,
+				BF776EB51F0B35EE00ABCC04 /* perRun8.png in Resources */,
 				BF29A7F11EF3AA7600DD726A /* layout_4 in Resources */,
 				BF946CB41EEFDC42001E8AEF /* 3_01.png in Resources */,
 				BF29A7D21EF383AB00DD726A /* iconfont.ttf in Resources */,
@@ -1695,11 +1780,15 @@
 				BFF0BE1E1EEE62240033159D /* RegisterViewController.xib in Resources */,
 				BF946CAE1EEFDC42001E8AEF /* 1_03.png in Resources */,
 				BF29A7EF1EF3AA7600DD726A /* layout_2 in Resources */,
+				BF776EB21F0B35EE00ABCC04 /* perRun5.png in Resources */,
+				BF776EB41F0B35EE00ABCC04 /* perRun7.png in Resources */,
+				BF776EB31F0B35EE00ABCC04 /* perRun6.png in Resources */,
 				BF946CBE1EEFDC42001E8AEF /* run1.png in Resources */,
 				BFF0BE521EEE62240033159D /* city.plist in Resources */,
 				BF946CDE1EEFE777001E8AEF /* app_item_bg.png in Resources */,
 				BF29A7D71EF389CA00DD726A /* pay.php in Resources */,
 				BF29A7F01EF3AA7600DD726A /* layout_3 in Resources */,
+				BF776ED11F0B468F00ABCC04 /* Language.bundle in Resources */,
 				BFF0BE1C1EEE62240033159D /* LoginViewController.xib in Resources */,
 				BF946CC31EEFDC42001E8AEF /* run6.png in Resources */,
 				BF5341561EF2EBFE00D874EC /* files in Resources */,
@@ -1713,6 +1802,7 @@
 				BF29A7D31EF383AB00DD726A /* logo.gif in Resources */,
 				BF533BE61EF272D800D874EC /* YALSunnyRefreshControl.xib in Resources */,
 				BF6A07651ED826EF00AD1E1F /* Assets.xcassets in Resources */,
+				BF776EB01F0B35EE00ABCC04 /* perRun3.png in Resources */,
 				BF946CAD1EEFDC42001E8AEF /* 1_02.png in Resources */,
 				BF29A7ED1EF3AA7600DD726A /* layout_0 in Resources */,
 				BF2718D01EF0E54F00F10F17 /* CLLockVC.xib in Resources */,
@@ -1722,6 +1812,7 @@
 				BF946CE01EEFE777001E8AEF /* app_item_pressed_bg.png in Resources */,
 				BF946CB91EEFDC42001E8AEF /* 5_01.png in Resources */,
 				BF946CC61EEFDC42001E8AEF /* run9.png in Resources */,
+				BF776EAF1F0B35EE00ABCC04 /* perRun2.png in Resources */,
 				BF6A07631ED826EF00AD1E1F /* Main.storyboard in Resources */,
 				BF71EE211EF3D95B00F3588D /* lata.gif in Resources */,
 				BF29A7EE1EF3AA7600DD726A /* layout_1 in Resources */,
@@ -1734,6 +1825,7 @@
 				BF946CDD1EEFE777001E8AEF /* app_item_add.png in Resources */,
 				BF946CBD1EEFDC42001E8AEF /* 5_05.png in Resources */,
 				BF946CC11EEFDC42001E8AEF /* run4.png in Resources */,
+				BF776EB11F0B35EE00ABCC04 /* perRun4.png in Resources */,
 				BF71EE1F1EF3D93F00F3588D /* buyao.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1827,6 +1919,7 @@
 				BFF0BE491EEE62240033159D /* WDIvar.m in Sources */,
 				BFF0BE431EEE62240033159D /* NSObject+Extention.m in Sources */,
 				BF29A7B01EF37C9B00DD726A /* MultiPeerViewController.m in Sources */,
+				BF776ECF1F0B462F00ABCC04 /* XSMiOSAuthorization.m in Sources */,
 				BF15E2091EF0D08900638149 /* GravityViewController.m in Sources */,
 				BF29A7B31EF37D5A00DD726A /* SudokuViewController.m in Sources */,
 				BFF0BE391EEE62240033159D /* UIGestureRecognizer+expanded.m in Sources */,
@@ -1839,6 +1932,7 @@
 				BF533BB51EF2351500D874EC /* SnowViewController.m in Sources */,
 				BF533BDD1EF26D7000D874EC /* EFAnimationViewController.m in Sources */,
 				BF15E2071EF0D08900638149 /* GameKitViewController.m in Sources */,
+				BF776EC61F0B41C100ABCC04 /* GameKitBlueToothViewController.m in Sources */,
 				BFF0BE251EEE62240033159D /* BaseTableView.m in Sources */,
 				BFF0BE361EEE62240033159D /* UIBarButtonItem+expanded.m in Sources */,
 				BFF0BE351EEE62240033159D /* SDDataCache.m in Sources */,
@@ -1854,6 +1948,7 @@
 				BF946C851EEFCF96001E8AEF /* TransitionViewController.m in Sources */,
 				BFF0BE1F1EEE62240033159D /* BaseCollectionView.m in Sources */,
 				BF15E2061EF0D08900638149 /* DownTableViewController.m in Sources */,
+				BF776EA41F0B358400ABCC04 /* AudioRunViewController.m in Sources */,
 				BFF0BE4A1EEE62240033159D /* WDMember.m in Sources */,
 				BF946C7D1EEFC234001E8AEF /* TTUITableViewZoomController.m in Sources */,
 				BF946C881EEFD217001E8AEF /* HMNavigationController.m in Sources */,
@@ -1861,10 +1956,12 @@
 				BF946CE41EEFE811001E8AEF /* MoveItemViewController.m in Sources */,
 				BF15E20E1EF0D08900638149 /* RemoteViewController.m in Sources */,
 				BF15E20A1EF0D08900638149 /* LocalNotificationViewController.m in Sources */,
+				BF776EC11F0B3F8100ABCC04 /* RealWorldViewController.m in Sources */,
 				BF15E20D1EF0D08900638149 /* RecordAudioViewController.m in Sources */,
 				BF5D54A31EF145D40022AEC7 /* UnAchiveViewController.m in Sources */,
 				BF533D101EF2D0E100D874EC /* UDPSocketViewController.m in Sources */,
 				BF946C731EEFBEAA001E8AEF /* RadiaMenuViewController.m in Sources */,
+				BF776EC91F0B439C00ABCC04 /* AppleShareViewController.m in Sources */,
 				BFF0BE371EEE62240033159D /* UIColor+expanded.m in Sources */,
 				BF533D0D1EF2CC5700D874EC /* TCP&UDPViewController.m in Sources */,
 				BF683D191EEF7AB200F4F72F /* CircleCollectionViewController.m in Sources */,
@@ -1899,6 +1996,7 @@
 				BF946C821EEFCB80001E8AEF /* ScaleCollectionViewController.m in Sources */,
 				BFF0BE2E1EEE62240033159D /* MyPageControl.m in Sources */,
 				BF15E2001EF0D08900638149 /* AddressBookViewController.m in Sources */,
+				BF776EBB1F0B3A9800ABCC04 /* LightCamoraViewController.m in Sources */,
 				BF15E2171EF0DD6400638149 /* UnlockViewController.m in Sources */,
 				BFF0BE3E1EEE62240033159D /* UIView+AutoLayout.m in Sources */,
 				BFF0BE2D1EEE62240033159D /* CALayer+XibConfiguration.m in Sources */,
@@ -1929,6 +2027,7 @@
 				BFF0BE4D1EEE62240033159D /* WDTypeEncoding.m in Sources */,
 				BFF0BE4F1EEE62240033159D /* AreaPickView.m in Sources */,
 				BF15E1D81EF0CF1800638149 /* JourneyViewController.m in Sources */,
+				BF776ECC1F0B445C00ABCC04 /* AudioRecordedViewController.m in Sources */,
 				BF533C661EF2824200D874EC /* ASRadialMenu.swift in Sources */,
 				BF533D3C1EF2DFCE00D874EC /* XMPPViewController.m in Sources */,
 				BF946CD11EEFDF8C001E8AEF /* EMHintsView.m in Sources */,
@@ -1952,7 +2051,9 @@
 				BF946C771EEFBEBC001E8AEF /* LNERadialMenu.m in Sources */,
 				BFF0BE1D1EEE62240033159D /* RegisterViewController.m in Sources */,
 				BF6CB9341EF01303007C7188 /* MenusViewController.m in Sources */,
+				BF776ED61F0B4A1300ABCC04 /* BigBirdViewController.swift in Sources */,
 				BF5341651EF2F5E000D874EC /* REPagedScrollView.m in Sources */,
+				BF776EB81F0B382C00ABCC04 /* VideoRecordViewController.m in Sources */,
 				BF533BE91EF2732600D874EC /* AnimatedRefreshViewController.m in Sources */,
 				BF533BE01EF26DA300D874EC /* TurnMenuViewController.m in Sources */,
 				BF27192C1EF1254800F10F17 /* DownLoadBigFileViewController.m in Sources */,
@@ -1987,6 +2088,7 @@
 				BF946C8B1EEFD3F8001E8AEF /* AnimationsViewController.m in Sources */,
 				BFF0BE311EEE62240033159D /* NSDictionary+expanded.m in Sources */,
 				BF5D54B51EF145DE0022AEC7 /* SSZipArchive.m in Sources */,
+				BF776EBE1F0B3DC600ABCC04 /* VideoRecordPlayViewController.m in Sources */,
 				BF533C6B1EF28C9200D874EC /* CoreAnimationViewController.m in Sources */,
 				BF6A075A1ED826EE00AD1E1F /* main.m in Sources */,
 				BF29A7DA1EF3919500DD726A /* CSYScanViewController.m in Sources */,

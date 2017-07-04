@@ -150,6 +150,7 @@
   @[@"Runtime",@"这是Runtime项目，使用MsgSend方法需要设置BuidSettings／Enable Strict Checking of objc_msgSendCalls : NO",@"picture",@"RuntimeViewController"],
   @[@"翻页阅读",@"这是书籍阅读项目",@"picture",@"PageReadViewController"],
   @[@"雷达扫描",@"这是雷达扫描附近的效果",@"lata",@"RadaViewController"],
+  @[@"声音赛跑",@"这是通过声音大小控制游戏中人物奔跑的项目",@"picture",@"AudioRunViewController"],
 nil];
     self.dataArray = [NSMutableArray arrayWithObjects:
   @{@"name":@"系统功能",@"array":section1},@{@"name":@"第三方服务",@"array":section2},

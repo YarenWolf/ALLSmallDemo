@@ -177,6 +177,10 @@
 		BF776ECF1F0B462F00ABCC04 /* XSMiOSAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = BF776ECE1F0B462F00ABCC04 /* XSMiOSAuthorization.m */; };
 		BF776ED11F0B468F00ABCC04 /* Language.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF776ED01F0B468F00ABCC04 /* Language.bundle */; };
 		BF776ED61F0B4A1300ABCC04 /* BigBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF776ED51F0B4A1300ABCC04 /* BigBirdViewController.swift */; };
+		BF7772611F0BAAA500ABCC04 /* MovieThumbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7772601F0BAAA500ABCC04 /* MovieThumbViewController.m */; };
+		BF7772641F0BAAEE00ABCC04 /* VideoPlayChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7772631F0BAAEE00ABCC04 /* VideoPlayChangeViewController.m */; };
+		BF7772671F0BAD0400ABCC04 /* MovieThumbRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7772661F0BAD0400ABCC04 /* MovieThumbRequestViewController.m */; };
+		BF7772691F0BAD5700ABCC04 /* Spotlight Search.gif in Resources */ = {isa = PBXBuildFile; fileRef = BF7772681F0BAD5700ABCC04 /* Spotlight Search.gif */; };
 		BF946C591EEF996F001E8AEF /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946C581EEF996F001E8AEF /* AlertViewController.m */; };
 		BF946C681EEF99DC001E8AEF /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946C5C1EEF99DC001E8AEF /* LewPopupBackgroundView.m */; };
 		BF946C691EEF99DC001E8AEF /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = BF946C5E1EEF99DC001E8AEF /* LewPopupViewAnimationDrop.m */; };
@@ -605,6 +609,13 @@
 		BF776ECE1F0B462F00ABCC04 /* XSMiOSAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSMiOSAuthorization.m; sourceTree = "<group>"; };
 		BF776ED01F0B468F00ABCC04 /* Language.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Language.bundle; sourceTree = "<group>"; };
 		BF776ED51F0B4A1300ABCC04 /* BigBirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigBirdViewController.swift; sourceTree = "<group>"; };
+		BF77725F1F0BAAA500ABCC04 /* MovieThumbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieThumbViewController.h; sourceTree = "<group>"; };
+		BF7772601F0BAAA500ABCC04 /* MovieThumbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieThumbViewController.m; sourceTree = "<group>"; };
+		BF7772621F0BAAEE00ABCC04 /* VideoPlayChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayChangeViewController.h; sourceTree = "<group>"; };
+		BF7772631F0BAAEE00ABCC04 /* VideoPlayChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayChangeViewController.m; sourceTree = "<group>"; };
+		BF7772651F0BAD0400ABCC04 /* MovieThumbRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieThumbRequestViewController.h; sourceTree = "<group>"; };
+		BF7772661F0BAD0400ABCC04 /* MovieThumbRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieThumbRequestViewController.m; sourceTree = "<group>"; };
+		BF7772681F0BAD5700ABCC04 /* Spotlight Search.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Spotlight Search.gif"; sourceTree = "<group>"; };
 		BF8E21E51EEE4160006B2C0A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BF946C571EEF996F001E8AEF /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
 		BF946C581EEF996F001E8AEF /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
@@ -984,6 +995,7 @@
 		BF29A7CB1EF3839A00DD726A /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				BF7772681F0BAD5700ABCC04 /* Spotlight Search.gif */,
 				BF776EA51F0B35EE00ABCC04 /* player */,
 				BF71EE221EF3D9C000F3588D /* picture.gif */,
 				BF71EE201EF3D95B00F3588D /* lata.gif */,
@@ -1040,6 +1052,12 @@
 				BF776EBD1F0B3DC600ABCC04 /* VideoRecordPlayViewController.m */,
 				BF776EB91F0B3A9800ABCC04 /* LightCamoraViewController.h */,
 				BF776EBA1F0B3A9800ABCC04 /* LightCamoraViewController.m */,
+				BF77725F1F0BAAA500ABCC04 /* MovieThumbViewController.h */,
+				BF7772601F0BAAA500ABCC04 /* MovieThumbViewController.m */,
+				BF7772651F0BAD0400ABCC04 /* MovieThumbRequestViewController.h */,
+				BF7772661F0BAD0400ABCC04 /* MovieThumbRequestViewController.m */,
+				BF7772621F0BAAEE00ABCC04 /* VideoPlayChangeViewController.h */,
+				BF7772631F0BAAEE00ABCC04 /* VideoPlayChangeViewController.m */,
 			);
 			path = "媒体播放";
 			sourceTree = "<group>";
@@ -1810,6 +1828,7 @@
 				BFF0BE4E1EEE62240033159D /* area.plist in Resources */,
 				BF946CAF1EEFDC42001E8AEF /* 1_04.png in Resources */,
 				BF946CE01EEFE777001E8AEF /* app_item_pressed_bg.png in Resources */,
+				BF7772691F0BAD5700ABCC04 /* Spotlight Search.gif in Resources */,
 				BF946CB91EEFDC42001E8AEF /* 5_01.png in Resources */,
 				BF946CC61EEFDC42001E8AEF /* run9.png in Resources */,
 				BF776EAF1F0B35EE00ABCC04 /* perRun2.png in Resources */,
@@ -1947,6 +1966,7 @@
 				BFF0BE571EEE62240033159D /* selecttypeView.m in Sources */,
 				BF946C851EEFCF96001E8AEF /* TransitionViewController.m in Sources */,
 				BFF0BE1F1EEE62240033159D /* BaseCollectionView.m in Sources */,
+				BF7772671F0BAD0400ABCC04 /* MovieThumbRequestViewController.m in Sources */,
 				BF15E2061EF0D08900638149 /* DownTableViewController.m in Sources */,
 				BF776EA41F0B358400ABCC04 /* AudioRunViewController.m in Sources */,
 				BFF0BE4A1EEE62240033159D /* WDMember.m in Sources */,
@@ -2009,6 +2029,7 @@
 				BF946C6A1EEF99DC001E8AEF /* LewPopupViewAnimationFade.m in Sources */,
 				BF2719351EF12AEF00F10F17 /* URLSessionTaskViewController.m in Sources */,
 				BF53416B1EF2F9A300D874EC /* CustomNavViewController.m in Sources */,
+				BF7772641F0BAAEE00ABCC04 /* VideoPlayChangeViewController.m in Sources */,
 				BFF0BE421EEE62240033159D /* NSDictionary+JSONSTR.m in Sources */,
 				BFF0BE551EEE62240033159D /* MyPlayTool.m in Sources */,
 				BF533BD21EF2637C00D874EC /* RegexKitLite.m in Sources */,
@@ -2043,6 +2064,7 @@
 				BF533D041EF2C32F00D874EC /* AsyncSocket.m in Sources */,
 				BFF0BE2F1EEE62240033159D /* NSData+Base64.m in Sources */,
 				BF2719321EF127C800F10F17 /* EncryptionViewController.m in Sources */,
+				BF7772611F0BAAA500ABCC04 /* MovieThumbViewController.m in Sources */,
 				BF15E20C1EF0D08900638149 /* QRCodeViewController.m in Sources */,
 				BFF0BE3F1EEE62240033159D /* UIView+expanded.m in Sources */,
 				BFF0BE381EEE62240033159D /* UIControl+expanded.m in Sources */,

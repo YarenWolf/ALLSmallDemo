@@ -1,17 +1,18 @@
 # ALLSmallDemo
+### 这是所有的小功能集合项目
 
-## NSArray *section1 = [NSArray arrayWithObjects:
-## @[@"发短信",@"发短信有两种方法，一个是系统自动发，一个是调出发短信界面。",@"picture",@"SendMessageViewController"],
-## @[@"远程通知",@"获取deviceToken和远程通知写在APPDelegate中的几个方法里。",@"picture",@"RemoteViewController"],
-## @[@"重力效果",@"这是重力和碰撞效果方法",@"picture",@"GravityViewController"],
-## @[@"旧加速计",@"这是过去的重力加速计效果Accelerometer方法",@"picture",@"AccelerometerViewController"],
-## @[@"新加速计",@"这是现在的重力加速计效果CoreMotion",@"picture",@"CoreMotionViewController"],
-## @[@"距离传感器",@"这是距离传感器，当距离靠近或离开的时候会触发相应方法，屏幕暗下来",@"picture",@"DistanceViewController"],
-## @[@"苹果自带的社会分享",@"这是苹果自带的社会化分享功能，包括微博，facebook等",@"picture",@"AppleSocialViewController"],
-## @[@"本地通知",@"这是本地通知的功能。",@"picture",@"LocalNotificationViewController"],
-#### @[@"发邮件",@"这是发送邮件的功能。",@"picture",@"SendEmailViewController"],
-### @[@"打电话",@"这是打电话的功能。",@"picture",@"CallViewController"],
 ```
+NSArray *section1 = [NSArray arrayWithObjects:
+@[@"发短信",@"发短信有两种方法，一个是系统自动发，一个是调出发短信界面。",@"picture",@"SendMessageViewController"],
+@[@"远程通知",@"获取deviceToken和远程通知写在APPDelegate中的几个方法里。",@"picture",@"RemoteViewController"],
+@[@"重力效果",@"这是重力和碰撞效果方法",@"picture",@"GravityViewController"],
+@[@"旧加速计",@"这是过去的重力加速计效果Accelerometer方法",@"picture",@"AccelerometerViewController"],
+@[@"新加速计",@"这是现在的重力加速计效果CoreMotion",@"picture",@"CoreMotionViewController"],
+@[@"距离传感器",@"这是距离传感器，当距离靠近或离开的时候会触发相应方法，屏幕暗下来",@"picture",@"DistanceViewController"],
+@[@"苹果自带的社会分享",@"这是苹果自带的社会化分享功能，包括微博，facebook等",@"picture",@"AppleSocialViewController"],
+@[@"本地通知",@"这是本地通知的功能。",@"picture",@"LocalNotificationViewController"],
+@[@"发邮件",@"这是发送邮件的功能。",@"picture",@"SendEmailViewController"],
+@[@"打电话",@"这是打电话的功能。",@"picture",@"CallViewController"],
 @[@"访问通讯录",@"这是访问系统通讯录的功能。",@"picture",@"AddressBookViewController"],
 @[@"GameKit蓝牙",@"这是GameKit的蓝牙功能。",@"picture",@"GameKitViewController"],
 @[@"蓝牙4.0",@"这是CoreBlueTooth的蓝牙功能。",@"picture",@"BlueToothViewController"],
@@ -54,7 +55,6 @@ NSArray *section5 = [NSArray arrayWithObjects:
 @[@"TCP&UDP的通讯协议",@"这是TCP和UDP的通讯协议内容。",@"picture",@"TCP&UDPViewController"],
 nil];
 
-```
 
 NSArray *section6 = [NSArray arrayWithObjects:
 @[@"表格编辑模式",@"这是表格的编辑模式包括增删和移动",@"picture",@"EditTableViewController"],
@@ -140,12 +140,11 @@ self.dataArray = [NSMutableArray arrayWithObjects:
 @{@"name":@"特效动画",@"array":section7},@{@"name":@"多媒体",@"array":section8},
 @{@"name":@"高新技术",@"array":section9},@{@"name":@"其它",@"array":section10}, nil];
 
+```
 
 
 
 
-
-这是所有的小功能集合项目
 **效果图如下** <br />
 github 图片链接格式：
 　　　　(http://github.com/yourname/your-repository/raw/master/images-folder/xxx.png)

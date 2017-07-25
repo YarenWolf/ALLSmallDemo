@@ -5,6 +5,113 @@
 #import "ThirdListTableView.h"
 #import <FLAnimatedImage/FLAnimatedImage.h>
 #import "AllSmallDemo-Swift.h"
+/*
+ TouchIDViewController
+ GameKitBlueToothViewController
+ AppleShareViewController
+ RegexViewController
+ DataDiskViewController
+ HitMouseViewController
+ GetLocalsPlayViewController
+ LocalPlayViewController
+ SocketViewController
+ UDPSocketViewController
+ TCP&UDPViewController
+ FileScanViewController
+ SudokuViewController
+ RuntimeViewController
+ PageReadViewController
+ RadaViewController
+ AudioRunViewController
+ RealWorldViewController
+ FlyBirdViewController
+ JieMiViewController
+ MediaPlayViewController
+ SQLViewController
+ FMDBViewController
+ AudioRecordedViewController
+ VideoRecordViewController
+ VideoRecordPlayViewController
+ LightCamoraViewController
+ MovieThumbViewController
+ MovieThumbRequestViewController
+ VideoPlayChangeViewController
+ DownLoadBigFileViewController
+ URLSessionTaskViewController
+ EncryptionViewController
+ UnAchiveViewController
+ WebDelegateViewController
+ XMPPViewController
+ OpenShareViewController
+ AccelerometerViewController
+ AddressBookViewController
+ AppleSocialViewController
+ BlueToothViewController
+ CallViewController
+ CoreMotionViewController
+ DistanceViewController
+ DownTableViewController
+ GameKitViewController
+ GoAPPViewController
+ GravityViewController
+ LocalNotificationViewController
+ QRCodeViewController
+ CSYScanViewController
+ RecordAudioViewController
+ RemoteViewController
+ SendEmailViewController
+ SendMessageViewController
+ XMLParseViewController
+ CompassViewController
+ IBeaconViewController
+ MultiPeerViewController
+ CalendarEventViewController
+ AppleGuideViewController
+ RadialMenuViewController
+ NaviMenuViewController
+ AlertViewController
+ RadiaMenuViewController
+ TransitionViewController
+ AnimationsViewController
+ WelcomeViewController
+ TopHUDViewController
+ DropScaleViewController
+ SnowViewController
+ RoundOutButtonViewController
+ TurnMenuViewController
+ AnimatedRefreshViewController
+ AnimatedMenuViewController
+ TurnRoundMenuViewController
+ CoreAnimationViewController
+ PhotoSeeViewController
+ ChangeLayoutViewController
+ BigBirdViewController
+ TypingViewController
+ FloatMenuViewController
+ TabPianoViewController
+ EditTableViewController
+ SearchResaltViewController
+ CircleCollectionViewController
+ EmojiViewController
+ SlideTableViewController
+ ScaleCollectionViewController
+ GuideViewController
+ MoveItemViewController
+ MenusViewController
+ ScreenshotViewController
+ GuidanceRegionViewController
+ JourneyViewController
+ UnlockViewController
+ GesturePWDViewController
+ TaijiViewController
+ GradientViewController
+ PainViewController
+ BooksViewController
+ LeftViewController
+ ScrollPageViewController
+ CustomNavViewController
+ CellAutoHeightViewController
+*/
 @interface AllSmallCell:UITableViewCell
 @property(nonatomic,strong)UILabel *nameLabel;
 @property(nonatomic,strong)UILabel *detailLabel;
@@ -58,7 +165,11 @@
  @[@"录音",@"这是录音功能的项目",@"picture",@"RecordAudioViewController"],
  @[@"指南针",@"这是指南针项目",@"picture",@"CompassViewController"],
  @[@"周边区域检测",@"这是周边区域检测的功能，可查看是否进入区域，及附近的蓝牙设备",@"picture",@"IBeaconViewController"],
- @[@"Wi-Fi或蓝牙在近距离建立连接",@"在近距离设备间建立互动，交换数据和其他资源的很好的简单工具",@"picture",@"MultiPeerViewController"],                         
+ @[@"Wi-Fi或蓝牙在近距离建立连接",@"在近距离设备间建立互动，交换数据和其他资源的很好的简单工具",@"picture",@"MultiPeerViewController"],
+ @[@"GameKit蓝牙技术",@"这是GameKitBlueTooth的蓝牙功能",@"picture",@"GameKitBlueToothViewController"],
+ @[@"扫描功能",@"扫描功能的控制器",@"picture",@"CSYScanViewController"],
+ @[@"苹果自带的分享",@"苹果自带的分享功能",@"picture",@"AppleShareViewController"],
+ @[@"苹果自带的日历提醒功能",@"这是访问苹果自带的日历提醒功能",@"picture",@"CalendarEventViewController"],
                       nil];
     NSArray *section2 = [NSArray arrayWithObjects:
   @[@"苹果自带导航",@"这是苹果自带的导航功能",@"picture",@"AppleGuideViewController"],
@@ -70,7 +181,7 @@
   @[@"数据持久化",@"这是数据持久化的几种方法",@"picture",@"DataDiskViewController"],
   @[@"SQL数据库基本使用",@"这是对SQL数据库的基本使用方法，需要引入libsqlite3.tbd",@"picture",@"SQLViewController"],
   @[@"FMDB数据库管理",@"这是利用FMDB进行数据库管理的几种方法，需要引入libsqlite3.tbd",@"picture",@"FMDBViewController"],
-                         
+  @[@"文件解密功能",@"这是文件加密解密功能",@"picture",@"JieMiViewController"],
                          nil];
     NSArray *section4 = [NSArray arrayWithObjects:
   @[@"XML解析",@"这是XML数据格式解析",@"picture",@"XMLParseViewController"],
@@ -83,8 +194,9 @@
   @[@"UDP协议通信",@"这是UDP的socket通信的样例",@"picture",@"UDPSocketViewController"],
   @[@"TCP/IP和UDP网络传输协议",@"这是TCP/IP和UDP的通信协议的使用。",@"picture",@"TCP_UDPViewController"],
   @[@"WebView代理",@"这是WebView代理访问的一些方法",@"picture",@"WebDelegateViewController"],
-@[@"XMPP通信 要加入libresorve库 用Pod时修改库本身",@"XMPPRoomLightMessageCoreDataStorageObject.h里去掉\"XMPPFramework/  在XMPPRoomLight.m里修改\"XMPPFramework/XMPPMessage+XEP0045.h\"",@"picture",@"XMPPViewController"],
+  @[@"XMPP通信 要加入libresorve库 用Pod时修改库本身",@"XMPPRoomLightMessageCoreDataStorageObject.h里去掉\"XMPPFramework/  在XMPPRoomLight.m里修改\"XMPPFramework/XMPPMessage+XEP0045.h\"",@"picture",@"XMPPViewController"],
   @[@"OpenShare分享",@"这是OpenShare分享到各大平台的功能，需要在AppDelegate里面做点设置openURL和launchOpetions里",@"picture",@"OpenShareViewController"],
+  @[@"TCP&UDP的通讯协议",@"这是TCP和UDP的通讯协议内容。",@"picture",@"TCP&UDPViewController"],
                          nil];
     
     
@@ -133,11 +245,24 @@
   @[@"核心动画",@"这是基本动画和关键帧动画",@"picture",@"CoreAnimationViewController"],
   @[@"照片动画浏览器",@"这是类似于空间画廊的照片浏览器",@"picture",@"PhotoSeeViewController"],                         
   @[@"根据布局文件改变布局",@"这是读取本地布局文件来改变布局的功能",@"picture",@"ChangeLayoutViewController"],
-                         
+ @[@"飞鸟游戏",@"这是飞鸟跳跃的游戏",@"picture",@"FlyBirdViewController"],
+ @[@"飞鸟放大的动画",@"这是飞鸟放大转场动画",@"picture",@"BigBirdViewController"],
+ @[@"打字机特效",@"这是将字一个一个打出的特效。",@"picture",@"TypingViewController"],
+ @[@"浮动菜单",@"这是浮在视图上面的菜单。",@"picture",@"FloatMenuViewController"],
+ @[@"钢琴特效按钮",@"这是像钢琴键盘一样的按钮特效。",@"picture",@"TabPianoViewController"],
                          nil];
     NSArray *section8 = [NSArray arrayWithObjects:
   @[@"音视频在线播放及音效播放",@"这是音视频在线播放功能还有音效播放的功能",@"picture",@"MediaPlayViewController"],
-  @[@"name",@"discription",@"picture",@"UIViewController"],nil];
+  @[@"虚拟现实VR",@"这是虚拟现实的VR效果",@"picture",@"RealWorldViewController"],
+  @[@"本地视频播放",@"这是本地视频的播放功能",@"picture",@"LocalPlayViewController"],
+  @[@"音频录制",@"这是音频录制功能",@"picture",@"AudioRecordedViewController"],
+  @[@"视频录制",@"这是视频录制功能",@"picture",@"VideoRecordViewController"],
+  @[@"视频录制播放",@"这是视频录制并播放的功能",@"picture",@"VideoRecordPlayViewController"],
+  @[@"带闪光灯拍摄",@"这是获取系统闪光灯的拍照效果。",@"picture",@"LightCamoraViewController"],
+  @[@"电影封面图获取",@"这是获取电影的某个界面作为电影的封面图。",@"picture",@"MovieThumbViewController"],
+  @[@"电影封面请求",@"这是请求获取电影的封面图。",@"picture",@"MovieThumbRequestViewController"],
+  @[@"视频快进快退与播放",@"这是视频播放修改功能",@"picture",@"VideoPlayChangeViewController"],
+                         nil];
     NSArray *section9 = [NSArray arrayWithObjects:
   @[@"TouchID验证",@"这是验证手机指纹的，点击开始",@"picture",@"TouchIDViewController"],
   @[@"name",@"discription",@"picture",@"UIViewController"],nil];
